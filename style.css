@@ -1,0 +1,79 @@
+body {
+    background: linear-gradient(66deg, #1E1E1E 13.45%, #2F2F2F 78.23%);
+    min-height: 100dvh;
+    width: 100dvw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.sec1 {
+    width: 50dvw;
+    height: 100dvh;
+    display: absolute;
+    flex-direction: column;
+    justify-content: center;
+    transform: skew(-15deg);
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec1-a  {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform: skew(15deg) translateX(-25%); 
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sec1-a img {
+    height: 100dvh;
+}
+
+.sec2 {
+    width: 50dvw;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec2-a {
+    width: 55%;
+}
+
+.sec2-a p {
+    margin-top: 3dvh;
+}
+
+.construction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10dvh;
+}
+
+.sec2-b {
+    display: flex;
+    flex-direction: row;
+    gap: 30%;
+    width: 100%;
+    margin-top: 12vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.git img{
+    height: 2rem;
+    aspect-ratio: 1/1;
+}
+
+.linkedin img{
+    height: 2.5rem;
+    aspect-ratio: 1/1;
+}
