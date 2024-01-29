@@ -1,0 +1,28 @@
+.back {
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+#element {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#element img {
+    width: 5rem;
+}
