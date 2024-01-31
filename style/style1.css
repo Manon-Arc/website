@@ -56,6 +56,61 @@
     width: 50dvw;
     height: 100dvh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+}
+
+.sec-2da {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.propos-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7dvh;
+    width: 10dvw;
+    margin-top: 3rem;
+}
+
+.sec-3 {
+    background: var(--gradiant-black);
+    background-size: cover;
+    width: 100dvw;
+    background-color: var(--title);
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-zone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 18dvw;
+    aspect-ratio: 1/1;
+    border-radius: 15px;
+    background: #404040;
+    box-shadow: 6px 10px 6px 2px rgba(14, 14, 14, 0.25);
 }

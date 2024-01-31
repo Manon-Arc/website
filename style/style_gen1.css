@@ -24,9 +24,15 @@ body {
     margin: 0;
 }
 
-.txt-title {
+.txt-intro {
     font-size: 3rem;
     color: var(--title);
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+}
+.txt-title {
+    font-size: 2rem;
+    color: var(--txt);
     font-family: "Inter", sans-serif;
     font-weight: bold;
 }
@@ -45,7 +51,7 @@ body {
 }
 
 .txt-category {
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: var(--title);
     font-family: "Inter", sans-serif;
 }
@@ -115,6 +121,10 @@ body {
     padding-left: 3%;
 }
 
+.header-left img{
+    height: 70%;
+}
+
 .header-right {
     width: 50%;
     height: 100%;
@@ -124,4 +134,24 @@ body {
     align-items: center;
     gap: 1rem;
     padding-right: 2%;
+}
+
+.line {
+    background-color: var(--main-blue);
+    width: 2dvw;
+    height: 0.3dvh;
+}
+
+.title-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.pic-spe {
+    width: 7dvw;
+    aspect-ratio: 1/1;
 }
