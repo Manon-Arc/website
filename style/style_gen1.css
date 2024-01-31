@@ -1,0 +1,127 @@
+:root {
+    --title : rgb(255, 255, 255);
+    --txt : rgb(220, 220, 220);
+    --main-blue : rgb(61, 128, 149);
+    --gradiant-black : linear-gradient(66deg, #1E1E1E 13.45%, #2F2F2F 78.23%);
+    --gradiant-blue : linear-gradient(93deg, #3D8095 0.03%, #3F5E88 100.03%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(66deg, #1E1E1E 13.45%, #2F2F2F 78.23%);
+    min-height: 100dvh;
+    width: 100dvw;
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.txt-title {
+    font-size: 3rem;
+    color: var(--title);
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+}
+
+.txt-subtitle {
+    font-size: 1.25rem;
+    color: var(--txt);
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+}
+
+.txt {
+    color: var(--txt);
+    font-family: "Inter", sans-serif;
+    font-size: medium;
+}
+
+.txt-category {
+    font-size: 0.8rem;
+    color: var(--title);
+    font-family: "Inter", sans-serif;
+}
+
+.selected {
+    color: var(--main-blue);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.txt-Portfolio {
+    font-size: 1.3rem;
+    color: var(--main-blue);
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+}
+
+.logiciel {
+    color: var(--txt);
+    font-family: "Inter", sans-serif;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+.name {
+    color: var(--txt);
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+
+.txt-btn {
+    color: var(--title);
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+    padding: 1rem;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: var(--gradiant-blue);
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8dvh;
+    z-index: 1; 
+    background: var(--gradiant-black);
+}
+
+.header-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 3%;
+}
+
+.header-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    gap: 1rem;
+    padding-right: 2%;
+}
