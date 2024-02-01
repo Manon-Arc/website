@@ -22,6 +22,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
+    overflow-y: scroll;
 }
 
 .txt-intro {
@@ -73,7 +74,7 @@ body {
     color: var(--txt);
     font-family: "Inter", sans-serif;
     font-style: italic;
-    font-size: 1.5rem;
+    font-size: small;
 }
 
 .name {
@@ -90,6 +91,7 @@ body {
     font-size: 1rem;
     font-weight: 200;
     padding: 1rem;
+    text-align: center;
 }
 
 .btn {
@@ -152,6 +154,14 @@ body {
 }
 
 .pic-spe {
-    width: 7dvw;
+    width: 6dvw;
     aspect-ratio: 1/1;
+}
+
+.spe-title {
+    color: var(--title);
+    font-family: "Inter", sans-serif;
+    font-size: medium;
+    font-weight: 600;
+    margin: 1rem;
 }
