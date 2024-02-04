@@ -184,18 +184,18 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 .contact-logo {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 7dvw;
+    gap: 7vw;
 }
 
-.contact-logo img{
-    width: 2dvw;
-    aspect-ratio: 1/1;    
+.contact-logo img {
+    width: 2vw;
+    aspect-ratio: 1/1;
+    transition: transform 0.3s ease;
 }
 
 .logo-link {
@@ -206,13 +206,23 @@ body {
 .contact-txt {
     position: absolute;
     bottom: -20px;
-    left: 50%;
-    transform: translateY(-50%);
+    text-align: center;
     opacity: 0;
-    transition: bottom 0.3s ease, opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    white-space: nowrap;
 }
 
-.contact-unit:hover .contact-txt {
+.logo-link:hover .contact-txt {
     bottom: 10px;
     opacity: 1;
+}
+
+.logo-link:hover img {
+    transform: translateX(-2.5dvw); /* Ajuster la valeur en fonction de la largeur du texte */
+}
+
+/* Ajustement de la position des autres logos lorsqu'un logo est survolé */
+.logo-link:hover ~ .logo-link img {
+    transform: translateX(2.5dvw); /* Ajuster la valeur en fonction de la largeur du texte */
 }
