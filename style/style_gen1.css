@@ -184,16 +184,25 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.contacts {
+    color: var(--title);
+    font-family: "Inter", sans-serif;
+    font-weight: 100;
+    font-size: 2rem;
+}
+
 .contact-logo {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 7vw;
+    gap: 7dvw;
+    margin: 8dvh;
 }
 
 .contact-logo img {
-    width: 2vw;
+    width: 2dvw;
     aspect-ratio: 1/1;
     transition: transform 0.3s ease;
 }
@@ -205,24 +214,37 @@ body {
 
 .contact-txt {
     position: absolute;
-    bottom: -20px;
     text-align: center;
     opacity: 0;
+    bottom: 1.2dvh;
     transition: opacity 0.3s ease;
     pointer-events: none;
     white-space: nowrap;
 }
 
 .logo-link:hover .contact-txt {
-    bottom: 10px;
     opacity: 1;
 }
 
 .logo-link:hover img {
-    transform: translateX(-2.5dvw); /* Ajuster la valeur en fonction de la largeur du texte */
+    transform: translateX(-2.5dvw);  
 }
 
-/* Ajustement de la position des autres logos lorsqu'un logo est survolé */
-.logo-link:hover ~ .logo-link img {
-    transform: translateX(2.5dvw); /* Ajuster la valeur en fonction de la largeur du texte */
+.droits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.txt-droits {
+    color: var(--txt);
+    font-family: "Inter", sans-serif;
+    font-size: small;
+    font-weight: 200;
+}
+
+.name-footer {
+    font-weight: bold;
+    font-style: italic;
 }
