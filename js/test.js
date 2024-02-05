@@ -21,12 +21,15 @@ function animer() {
     requestAnimationFrame(animer);
 }
 
-container.addEventListener('mouseenter', function () {
+container.addEventListener('mouseenter', async function () {
     boucleUp(170);
+    await sleep(1500)
+    gear.style.zIndex = 4
 });
 
 container.addEventListener('mouseleave', function () {
     boucleDown(100);
+    gear.style.zIndex = 2
 });
 
 animer();
@@ -36,7 +39,7 @@ function boucleUp(NewRayon) {
         rayon++;
         setTimeout(function() {
             boucleUp(NewRayon);
-        }, 0.5);
+        }, 1);
     }
 }
 
@@ -45,6 +48,11 @@ function boucleDown(NewRayon) {
         rayon--;
         setTimeout(function() {
             boucleDown(NewRayon);
-        }, 0.5);
+        }, 1);
     }
 }
+
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
