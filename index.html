@@ -1,41 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Portfolio</title>
-		<link rel="stylesheet" href="style/style.css">
-		<link rel="stylesheet" href="style/style_gen.css">
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
-	</head>
-	<body>/
-		<div class="sec1">
-			<div class="sec1-a">
-				<img src="Asset/workplace.jpg" alt="">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/style_gen.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+	<title>Portfolio</title>
+	<link rel="shortcut icon" href="Asset/PortFolio_Icone.png" type="image/x-icon">
+</head>
+
+<body>
+	<header class="header">
+		<div class="header-left">
+			<img src="Asset/PortFolio.png" alt="">
+		</div>
+		<div class="header-right">
+			<a href="#0">
+				<p class="txt-category selected" onclick="selected(this)">Accueil</p>
+			</a>
+			<a href="#1">
+				<p class="txt-category" onclick="selected(this)">A propos</p>
+			</a>
+			<a href="#2">
+				<p class="txt-category" onclick="selected(this)">Compétences</p>
+			</a>
+			<a href="">
+				<p class="txt-category" onclick="selected(this)">Réalisations</p>
+			</a>
+			<a href="#4">
+				<p class="txt-category" onclick="selected(this)">Contacts</p>
+			</a>
+		</div>
+	</header>
+	<div class="sec-1" id="0">
+		<div class="sec-1g">
+			<p class="name">ARCAS Manon</p>
+			<p class="txt-intro">Etudiante en informatique</p>
+			<p class="txt-subtitle recherche">Recherche stage et alternance dans la robotique, mécatronique</p>
+			<a href="#1">
+				<div class="btn a-propos">
+					<p class="txt-btn">A propos</p>
+				</div>
+			</a>
+		</div>
+	</div>
+	<div class="sec-2" id="1">
+		<div class="sec-2g">
+			<div class="border-pic">
+				<img src="" alt="">
 			</div>
 		</div>
-		<div class="sec2">
-			<div class="sec2-a">
-				<div class="construction">
-					<h1 class="title">En construction</h1>
+		<div class="sec-2d">
+			<div class="sec-2da">
+				<div class="title-line">
+					<div class="line"></div>
+					<p class="txt-title">A propos</p>
+					<div class="line"></div>
 				</div>
-				<p class="txt">Ce site est actuellement en cours de contruction,
-					<br>il arrive très vite !</p>
-				<div class="sec2-b">
-					<div class="git">
-						<a href="https://github.com/Manon-Arc">
-							<img src="Asset/git_logo_white.png" alt="">
-						</a>
-					</div>
-					<div class="linkedin">
-						<a href="https://www.linkedin.com/in/manon-arcas-696750264/">
-							<img src="Asset/linkedin-logo_white.png" alt="">
-						</a>
-					</div>
+				<div class="propos-desc">
+					<p class="txt">Bienvenue sur mon site portfolio !</p>
+					<p class="txt">Je suis Manon Arcas, une passionnée d'informatique et de mécatronique, actuellement étudiante dans ces domaines fascinants. Ma passion pour la robotique et les nouvelles technologies m'a guidée vers une carrière que je souhaite embrasser pleinement.</p>
+					<p class="txt">Au fil de mon parcours, j'ai eu l'opportunité de réaliser plusieurs projets passionnants, combinant mes compétences en programmation, en conception mécanique et en électronique. Ces expériences m'ont permis de développer mes connaissances et mes compétences, mais surtout, elles ont renforcé ma détermination à poursuivre dans ce domaine dynamique et innovant.</p>
+					<p class="txt">Ce site portfolio est une vitrine de mon parcours et de mes réalisations jusqu'à présent. Explorez mes projets passés et voyez comment je pourrais contribuer à des projets innovants.</p>
+					<p class="txt">Merci de votre visite ! N'hésitez pas à me contacter pour toute opportunité de collaboration ou pour en savoir plus sur mon parcours professionnel.</p>
 				</div>
 			</div>
-
+			<a href="Asset/Manon_ARCAS_CV.pdf" target="_blank">
+				<div class="btn cv">
+					<p class="txt-btn">Télécharger mon CV</p>
+				</div>
+			</a>
 		</div>
-	</body>
+	</div>
+	<div class="sec-3" id="2">
+		<div class="title-line competence">
+			<div class="line"></div>
+			<p class="txt-title">Compétences</p>
+			<div class="line"></div>
+		</div>
+		<div class="card-zone">
+			<div class="card" id="dev-contain">
+				<img class="pic-spe" src="Asset/coding_blue.png" alt="">
+				<p class="spe-title">Développement</p>
+				<p class="logiciel">Python, C#, Arduino, Java...</p>
+			</div>
+
+			<div class="div-icon" id="python">
+				<img src="Asset/logo/python.png" alt="">
+			</div>
+			<div class="div-icon" id="csharpe">
+				<img src="Asset/logo/c_sharpe.png" alt="">
+			</div>
+			<div class="div-icon" id="arduino">
+				<img src="Asset/logo/arduino.png" alt="">
+			</div>
+			<div class="div-icon" id="java">
+				<img src="Asset/logo/java.png" alt="">
+			</div>
+			<div class="div-icon" id="cplus">
+				<img src="Asset/logo/cplus.png" alt="">
+			</div>
+			<div class="div-icon" id="c">
+				<img src="Asset/logo/c.png" alt="">
+			</div>
+
+			<div class="card" id="elec-contain">
+				<img class="pic-spe" src="Asset/pcb-blue.png" alt="">
+				<p class="spe-title">Électronique</p>
+				<p class="logiciel">Altium, Kicad, Circuit Maker</p>
+			</div>
+
+			<div class="div-icon" id="altium">
+				<img src="Asset/logo/altium-designer.png" alt="">
+			</div>
+			<div class="div-icon" id="kicad">
+				<img src="Asset/logo/KiCad.png" alt="">
+			</div>
+			<div class="div-icon" id="circuitmaker">
+				<img src="Asset/logo/circuitMaker.png" alt="">
+			</div>
+
+
+			<div class="card" id="meca-contain">
+				<img class="pic-spe" src="Asset/gear_blue.png" alt="">
+				<p class="spe-title">Mécanique</p>
+				<p class="logiciel">Fusion360</p>
+			</div>
+
+			<div class="div-icon" id="fusion">
+				<img src="Asset/logo/fusion.png" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="footer" id="4">
+		<div>
+			<p class="contacts">Contacts</p>
+		</div>
+		<div class="contact-logo">
+			<a href="https://www.linkedin.com/in/manon-arcas-696750264/" class="logo-link">
+				<div class="contact-unit">
+					<img src="Asset/contacts/linkedin.png" alt="">
+					<p class="contact-txt txt-contact-style">Manon Arcas</p>
+				</div>
+			</a>
+			<a href="https://github.com/Manon-Arc" class="logo-link">
+				<div class="contact-unit">
+					<img src="Asset/contacts/git.png" alt="">
+					<p class="contact-txt txt-contact-style">Manon-Arc</p>
+				</div>
+			</a>
+			<a href="tel:0616285890" class="logo-link">
+				<div class="contact-unit">
+					<img src="Asset/contacts/call.png" alt="">
+					<p class="contact-txt txt-contact-style">06.16.28.58.90</p>
+				</div>
+			</a>
+			<a href="mailto:arcasmanon47@gmail.com" class="logo-link">
+				<div class="contact-unit">
+					<img src="Asset/contacts/arroba.png" alt="">
+					<p class="contact-txt txt-contact-style">arcasmanon47@gmail.com</p>
+				</div>
+			</a>
+		</div>
+		<div class="droits">
+			<p class="txt-droits">©Copyright, Tous droits reservés</p>
+			<p class="txt-droits">
+				<span>developpé par</span>
+				<span class="name-footer">Manon Arcas</span>
+				<span>avec ❤</span>
+			</p>
+		</div>
+	</div>
+	<img class="circuit-footer" src="Asset/circuit.png" alt="">
+</body>
+<script src="js/anim_dev.js"></script>
+<script src="js/anim_elec.js"></script>
+<script src="js/anim_meca.js"></script>
+<script src="js/header.js"></script>
+
 </html>

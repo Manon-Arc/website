@@ -1,79 +1,134 @@
-body {
-    background: linear-gradient(66deg, #1E1E1E 13.45%, #2F2F2F 78.23%);
-    min-height: 100dvh;
+@import url("../style/style_gen.css");
+
+.sec-1 {
+    background: linear-gradient(0deg, rgba(66, 129, 149, 0.10) 0%, rgba(66, 129, 149, 0.10) 100%), url("../Asset/workplace.jpg"), lightgray 50% / cover no-repeat;
+    background-size: cover;
     width: 100dvw;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    margin: 0;
+    background-color: var(--title);
+    min-height: 100dvh;
 }
 
-.sec1 {
-    width: 50dvw;
-    height: 100dvh;
-    display: absolute;
-    flex-direction: column;
-    justify-content: center;
-    transform: skew(-15deg);
-    overflow: hidden;
-    align-items: center;
-    justify-content: center;
-}
-
-.sec1-a  {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    transform: skew(15deg) translateX(-25%); 
-    justify-content: center;
-    align-items: center;
-}
-
-
-.sec1-a img {
-    height: 100dvh;
-}
-
-.sec2 {
+.sec-1g {
     width: 50dvw;
     height: 100dvh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    margin-left: 6dvw;
+    gap: 0.5rem;
 }
 
-.sec2-a {
-    width: 55%;
+.recherche {
+    max-width: 30dvw;
 }
 
-.sec2-a p {
-    margin-top: 3dvh;
+.a-propos {
+    height: 7dvh;
+    width: 10dvw;
+    margin-top: 2rem;
 }
 
-.construction {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10dvh;
-}
-
-.sec2-b {
+.sec-2 {
+    background: var(--gradiant-black);
+    background-size: cover;
+    width: 100dvw;
+    background-color: var(--title);
+    min-height: 100dvh;
     display: flex;
     flex-direction: row;
-    gap: 30%;
-    width: 100%;
-    margin-top: 12vh;
+}
+
+.sec-2g {
+    width: 50dvw;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border-pic {
+    width: 60%;
+    height: 60%;
+    background-color: var(--main-blue);
+}
+
+.sec-2d {
+    width: 50dvw;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sec-2da {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.propos-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7dvh;
+    width: 10dvw;
+    margin-top: 2rem;
+}
+
+.sec-3 {
+    background-color: var(--desktopComp);
+    background-size: cover;
+    width: 100dvw;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.git img{
-    height: 2rem;
-    aspect-ratio: 1/1;
+.card-zone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    margin-top: 3rem ;
 }
 
-.linkedin img{
-    height: 2.5rem;
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 18dvw;
     aspect-ratio: 1/1;
+    border-radius: 15px;
+    background: #404040;
+    box-shadow: 6px 10px 6px 2px rgba(14, 14, 14, 0.25);
+    z-index: 2;
+}
+
+.div-icon {
+    aspect-ratio: 1/1;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.div-icon img {
+    width: 3dvw;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

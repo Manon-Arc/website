@@ -1,0 +1,24 @@
+:root {
+    --title : rgb(255, 255, 255);
+    --txt : rgb(220, 220, 220);
+}
+
+body {
+    background: linear-gradient(66deg, #1E1E1E 13.45%, #2F2F2F 78.23%);
+    min-height: 100dvh;
+    width: 100dvw;
+    overflow: hidden;
+}
+
+
+.title {
+    font-size: 3.5rem;
+    color: var(--title);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.txt {
+    color: var(--txt);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+}

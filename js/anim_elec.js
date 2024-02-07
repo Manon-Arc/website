@@ -8,19 +8,19 @@ const containerERect = containerE.getBoundingClientRect();
 const vitesseE = 0.01;
 let rayonE = 80;
 
-let angleA = 0;
-let angleK = 800;
+let angleAltium = 0;
+let angleKicad = 800;
 let angleCM = 400;
 
 function animerE() {
     const containerECenterX = containerERect.left + containerERect.width / 2;
     const containerECenterY = containerERect.top + containerERect.height / 2;
 
-    const xAltium = containerECenterX + rayonE * Math.cos(angleA) - logoAltium.offsetWidth / 2;
-    const yAltium = containerECenterY + rayonE * Math.sin(angleA) - logoAltium.offsetHeight / 2;
+    const xAltium = containerECenterX + rayonE * Math.cos(angleAltium) - logoAltium.offsetWidth / 2;
+    const yAltium = containerECenterY + rayonE * Math.sin(angleAltium) - logoAltium.offsetHeight / 2;
 
-    const xKicad = containerECenterX + rayonE * Math.cos(angleK) - logoKicad.offsetWidth / 2;
-    const yKicad = containerECenterY + rayonE * Math.sin(angleK) - logoKicad.offsetHeight / 2;
+    const xKicad = containerECenterX + rayonE * Math.cos(angleKicad) - logoKicad.offsetWidth / 2;
+    const yKicad = containerECenterY + rayonE * Math.sin(angleKicad) - logoKicad.offsetHeight / 2;
 
     const xCM = containerECenterX + rayonE * Math.cos(angleCM) - logoCM.offsetWidth / 2;
     const yCM = containerECenterY + rayonE * Math.sin(angleCM) - logoCM.offsetHeight / 2;
@@ -34,8 +34,8 @@ function animerE() {
     logoCM.style.left = xCM + 'px';
     logoCM.style.top = yCM + 'px';
 
-    angleA += vitesseE;
-    angleK += vitesseE;
+    angleAltium += vitesseE;
+    angleKicad += vitesseE;
     angleCM += vitesseE;
 
 
@@ -52,7 +52,7 @@ containerE.addEventListener('mouseenter', async function () {
 });
 
 containerE.addEventListener('mouseleave', function () {
-    boucleDownE(100);
+    boucleDownE(80);
     logoAltium.style.zIndex = 1
     logoKicad.style.zIndex = 1
     logoCM.style.zIndex = 1
