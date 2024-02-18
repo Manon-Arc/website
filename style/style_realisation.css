@@ -57,3 +57,21 @@
 .D {
     background-image: url(../Asset/projUnitD.svg);
 }
+
+.pic-project {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 50dvw;
+    height: 50dvh;
+}
+
+.pic-project img {
+    width: 50%;
+}
+
+.project-prez {
+    width: 50dvw;
+    height: 50dvh;
+}
