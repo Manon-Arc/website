@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../style/style_realisation.css">
+    <link rel="stylesheet" href="../style/style_gen.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-left">
+            <img src="../Asset/PortFolio.png" alt="">
+        </div>
+        <div class="header-right">
+            <a href="#0">
+                <p class="txt-category" onclick="selected(this)">Accueil</p>
+            </a>
+            <a href="#1">
+                <p class="txt-category" onclick="selected(this)">A propos</p>
+            </a>
+            <a href="#2">
+                <p class="txt-category" onclick="selected(this)">Compétences</p>
+            </a>
+            <a href="">
+                <p class="txt-category selected" onclick="selected(this)">Réalisations</p>
+            </a>
+            <a href="#4">
+                <p class="txt-category" onclick="selected(this)">Contacts</p>
+            </a>
+        </div>
+    </header>
+    <div class="banniere">
+        <div class="line-banniere"></div>
+        <div class="banniere-pic">
+            <p class="txt-real">Mes Réalisations</p>
+        </div>
+        <div class="line-banniere"></div>
+    </div>
+    <div class="category-proj">
+        <div>
+            <p class="txt-category-real selected-category" onclick="selectedCategory(this)">Prototype</p>
+        </div>
+        <div class="line-category"></div>
+        <div>
+            <p class="txt-category-real" onclick="selectedCategory(this)">
+                <span>Conception</span>
+                <span>électronique</span>
+            </p>
+        </div>
+        <div class="line-category"></div>
+        <div>
+            <p class="txt-category-real" onclick="selectedCategory(this)">
+                <span>Projet</span>
+                <span>développement</span>
+            </p>
+        </div>
+        <div class="line-category"></div>
+        <div>
+            <p class="txt-category-real" onclick="selectedCategory(this)">
+                <span>Conception</span>
+                <span>mécanique</span>
+            </p>
+        </div>
+    </div>
+    <div class="project-list">
+        <div class="project-unit G">
+
+        </div>
+        <div class="project-unit D">
+
+        </div>
+    </div>
+
+
+
+    <div class="footer" id="4">
+        <div>
+            <p class="contacts">Contacts</p>
+        </div>
+        <div class="contact-logo">
+            <a href="https://www.linkedin.com/in/manon-arcas-696750264/" class="logo-link">
+                <div class="contact-unit">
+                    <img src="../Asset/contacts/linkedin.png" alt="">
+                    <p class="contact-txt txt-contact-style">Manon Arcas</p>
+                </div>
+            </a>
+            <a href="https://github.com/Manon-Arc" class="logo-link">
+                <div class="contact-unit">
+                    <img src="../Asset/contacts/git.png" alt="">
+                    <p class="contact-txt txt-contact-style">Manon-Arc</p>
+                </div>
+            </a>
+            <a href="tel:0616285890" class="logo-link">
+                <div class="contact-unit">
+                    <img src="../Asset/contacts/call.png" alt="">
+                    <p class="contact-txt txt-contact-style">06.16.28.58.90</p>
+                </div>
+            </a>
+            <a href="mailto:arcasmanon47@gmail.com" class="logo-link">
+                <div class="contact-unit">
+                    <img src="../Asset/contacts/arroba.png" alt="">
+                    <p class="contact-txt txt-contact-style">arcasmanon47@gmail.com</p>
+                </div>
+            </a>
+        </div>
+        <div class="droits">
+            <p class="txt-droits">©Copyright, Tous droits reservés</p>
+            <p class="txt-droits">
+                <span>developpé par</span>
+                <span class="name-footer">Manon Arcas</span>
+                <span>avec ❤</span>
+            </p>
+        </div>
+    </div>
+    <img class="circuit-footer" src="../Asset/circuit.png" alt="">
+</body>
+</body>
+<script src="../js/select_category.js"></script>
+
+</html>

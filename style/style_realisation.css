@@ -1,0 +1,59 @@
+@import url("../style/style_gen.css");
+
+.banniere{
+    margin-top: 8dvh;
+    height: 50dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+.line-banniere{
+    width: 100dvw;
+    height: 1dvh;
+    background-color: var(--main-blue);
+}
+
+.banniere-pic {
+    background-image: url(../Asset/bannière.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-proj {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100dvw;
+    height: 18dvh;
+    gap: 1dvw;
+}
+
+.line-category {
+    height: 5dvh;
+    width: 2px;
+    background-color: var(--main-blue);
+}
+
+.project-unit {
+    height: 50dvh;
+    width: 100dvw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.G {
+    background-image: url(../Asset/projUnitG.svg);
+}
+
+.D {
+    background-image: url(../Asset/projUnitD.svg);
+}
