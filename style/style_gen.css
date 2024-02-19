@@ -109,7 +109,6 @@ body {
     font-family: "Inter", sans-serif;
     font-size: 1.5rem;
     font-weight: 400;
-
 }
 
 .txt-btn {
@@ -150,8 +149,12 @@ body {
     padding-left: 3%;
 }
 
-.header-left img{
+.header-left a{
     height: 60%;
+}
+
+.header-left a img{
+    height: 100%;
 }
 
 .header-right {
@@ -195,6 +198,7 @@ body {
 
 .link-proj {
     color: var(--txt);
+
 }
 
 .link-proj:hover{
@@ -285,3 +289,18 @@ body {
     opacity: 0.5;
 }
 
+.btn-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    width: 2dvw;
+    aspect-ratio: 1/1;
+    background: var(--gradiant-blue);
+    margin-top: 2dvh;
+}
+
+.btn-more img{
+    width: 1dvw;
+    aspect-ratio: 1/1;
+}

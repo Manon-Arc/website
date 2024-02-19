@@ -7,22 +7,28 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="../style/style_realisation.css">
     <link rel="stylesheet" href="../style/style_gen.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+	<title>Portfolio</title>
+	<link rel="shortcut icon" href="../Asset/PortFolio_Icone.png" type="image/x-icon">
 </head>
 
 <body>
     <header class="header">
         <div class="header-left">
-            <img src="../Asset/PortFolio.png" alt="">
+            <a href="../index.html">
+                <img src="../Asset/PortFolio.png" alt="">
+            </a>
         </div>
         <div class="header-right">
-            <a href="#0">
+            <a href="../index.html">
                 <p class="txt-category" onclick="selected(this)">Accueil</p>
             </a>
-            <a href="#1">
+            <a href="../index.html">
                 <p class="txt-category" onclick="selected(this)">A propos</p>
             </a>
-            <a href="#2">
+            <a href="../index.html">
                 <p class="txt-category" onclick="selected(this)">Compétences</p>
             </a>
             <a href="">
@@ -42,7 +48,7 @@
     </div>
     <div class="category-proj">
         <div>
-            <p class="txt-category-real selected-category" onclick="selectedCategory(this)">Prototype</p>
+            <p class="txt-category-real selected-category" onclick="loadContent('../html/test.html')">Prototype</p>
         </div>
         <div class="line-category"></div>
         <div>
@@ -76,33 +82,50 @@
                     <p class="txt-title project-name">Marcus</p>
                     <div class="under-line"></div>
                 </div>
-                <div class="language">
-                    <img class="pic-project-prez" src="../Asset/coding_white.png" alt="">
-                    <p class="txt">Python / micropython</p>
-                </div>
-                <div class="features">
-                    <img class="pic-project-prez" src="../Asset/feature.png" alt="">
-                    <p class="txt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio vel natus cum
-                        nobis quae numquam maxime illum fuga. Cum iure veritatis illo nihil labore molestiae
-                        doloribus fuga magnam incidunt repellat.</p>
-                </div>
-                <div class="third-line">
-                    <div class="software">
-                        <img class="pic-project-prez" src="../Asset/software.png" alt="">
-                        <p class="txt">Fusion360 / Kicad</p>
-                    </div>
-                    <div class="team">
-                        <img class="pic-project-prez" src="../Asset/user.png" alt="">
-                        <p class="txt">Collectif</p>
+
+                <div class="project-desc">
+                    <p class="txt">Création d'un prototype de robot pompier en 5 jours lors d'un Hackaton.</p>
+                    <div class="btn-more">
+                        <img src="../Asset/plus.png" alt="">
                     </div>
                 </div>
-                <p class="logiciel-link">
-                    <span>lien du projet : </span>
-                    <span>
-                        <a class="link-proj" href="https://github.com/Manon-Arc/Marcus_Hackathon"
-                            target="_blank">https://github.com/Manon-Arc/Marcus_Hackathon</a>
-                    </span>
-                </p>
+
+
+                <div class="project-detail">
+                    <div class="language">
+                        <img class="pic-project-prez" src="../Asset/coding_white.png" alt="">
+                        <p class="txt">Python / micropython</p>
+                    </div>
+                    <div class="features">
+                        <img class="pic-project-prez" src="../Asset/feature.png" alt="">
+                        <p class="txt">
+                            <span>Contrôle via une manette connectée en ESP-Now (150m en conditions idéales),</span>
+                            <span>Capacité de se déplacer dans huit directions différentes (roues mécanum),</span>
+                            <span>Gyrophare rotatif pour signaler les interventions d'urgence,</span>
+                            <span>Canon à eau offrant une liberté de mouvement de 45° en hauteur,</span>
+                            <span>Emplacement de fixation pour l'ajout d'accessoires (phare, mégaphone).</span>
+                        </p>
+                    </div>
+                    <div class="third-line">
+                        <div class="software">
+                            <img class="pic-project-prez" src="../Asset/software.png" alt="">
+                            <p class="txt">Fusion360 / Kicad</p>
+                        </div>
+                        <div class="team">
+                            <img class="pic-project-prez" src="../Asset/user.png" alt="">
+                            <p class="txt">Collectif</p>
+                        </div>
+                    </div>
+                    <div class="link-zone">
+                        <p class="logiciel-link">
+                            <span>lien du projet : </span>
+                            <span>
+                                <a class="link-proj" href="https://github.com/Manon-Arc/Marcus_Hackathon"
+                                    target="_blank">https://github.com/Manon-Arc/Marcus_Hackathon</a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="project-unit D">
@@ -153,5 +176,8 @@
 </body>
 </body>
 <script src="../js/select_category.js"></script>
+<script src="../js/hover_proj.js"></script>
+<script src="../js/header.js"></script>
+<script src="../js/load_content.js"></script>
 
 </html>
