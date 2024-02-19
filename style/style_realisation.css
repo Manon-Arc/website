@@ -67,6 +67,16 @@
     height: 50dvh;
 }
 
+.project-title {
+    position: relative;
+    width: fit-content;
+    margin-bottom: 2dvh;
+}
+
+.project-name {
+    width: fit-content;
+}
+
 .pic-project img {
     width: 50%;
 }
@@ -74,4 +84,60 @@
 .project-prez {
     width: 50dvw;
     height: 50dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3dvh;
+}
+
+.under-line {
+    width: 65%;
+    height: 0.5dvh;
+    background-color: var(--main-blue);
+}
+
+.language {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 1dvw;
+}
+
+.features {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 1dvw;
+}
+
+.third-line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 5dvw;
+    
+}
+
+.software {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 1dvw;
+}
+
+.team {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 1dvw;
+}
+
+.pic-project-prez {
+    aspect-ratio: 1/1;
+    height: 4dvh;
 }

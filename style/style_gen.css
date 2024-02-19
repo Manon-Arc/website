@@ -97,7 +97,7 @@ body {
     font-weight: bold;
 }
 
-.logiciel {
+.logiciel-link {
     color: var(--txt);
     font-family: "Inter", sans-serif;
     font-style: italic;
@@ -191,6 +191,15 @@ body {
     font-size: medium;
     font-weight: 600;
     margin: 1rem;
+}
+
+.link-proj {
+    color: var(--txt);
+}
+
+.link-proj:hover{
+    color: var(--main-blue);
+    text-decoration: underline;
 }
 
 .footer {
