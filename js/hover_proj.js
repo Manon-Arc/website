@@ -28,3 +28,4 @@ projectLink.addEventListener('mouseleave', () => {
 addOpacityListeners("marcus")
 addOpacityListeners("robolympiades")
 addOpacityListeners("assistant")
+addOpacityListeners("mecanum")
