@@ -73,6 +73,10 @@
     margin-bottom: 5dvh;
 }
 
+.project-title-D{
+    margin-left: 5dvw;
+}
+
 .project-name {
     width: fit-content;
 }
@@ -102,6 +106,14 @@
     transition: all ease-in-out 0.2s;
 }
 
+.project-desc-D {
+    margin-left: 5dvw;
+}
+
+.project-desc-G {
+    padding-right: 5dvw;
+}
+
 .project-detail {
     position: relative;
     display: flex;
@@ -109,6 +121,10 @@
     gap: 3dvh;
     opacity: 0;
     transition: all ease-in-out 0.2s;
+}
+
+.project-detail-D{
+    margin-left: 5dvw;
 }
 
 .under-line {

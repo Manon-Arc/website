@@ -1,7 +1,8 @@
-const projectDesc = document.querySelector('.project-desc');
-const projectDetail = document.querySelector('.project-detail');
-const projectLink = document.querySelector('.link-zone');
+function addOpacityListeners(target) {
 
+    const projectDesc = document.querySelector('.project-desc.' + target);
+    const projectDetail = document.querySelector('.project-detail.' + target);
+    const projectLink = document.querySelector('.link-zone.' + target);
 
 projectDesc.addEventListener('mouseenter', () => {
     projectDesc.style.opacity = '0';
@@ -22,3 +23,8 @@ projectLink.addEventListener('mouseleave', () => {
     projectDesc.style.opacity = '1';
     projectDetail.style.opacity = '0';
 });
+}
+
+addOpacityListeners("marcus")
+addOpacityListeners("robolympiades")
+addOpacityListeners("assistant")
