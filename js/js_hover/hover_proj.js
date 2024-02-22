@@ -28,11 +28,5 @@ projectLink.addEventListener('mouseleave', () => {
     projectDetail.style.opacity = '0';
 });
 }
-
 addOpacityListeners("bluetooth")
-
 addOpacityListeners("moduleESP")
-addOpacityListeners("marcus")
-addOpacityListeners("robolympiades")
-addOpacityListeners("assistant")
-addOpacityListeners("mecanum")

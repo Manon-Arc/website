@@ -58,7 +58,7 @@
     background-image: url(../Asset/projUnitD.svg);
 }
 
-.pic-project {
+.pic-project a{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -81,7 +81,7 @@
     width: fit-content;
 }
 
-.pic-project img {
+.pic-project a img {
     width: 50%;
 }
 
@@ -94,7 +94,7 @@
 }
 
 .project-desc {
-    padding-top: 3dvh;
+    padding-top: 5dvh;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -107,6 +107,8 @@
 }
 
 .project-desc-D {
+    padding-top: 15dvh;
+
     margin-left: 5dvw;
 }
 

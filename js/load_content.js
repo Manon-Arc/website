@@ -14,7 +14,7 @@ function loadContent(url) {
     fetch(url)
         .then(response => response.text())
         .then(data => {
-            document.getElementById('test').innerHTML = data;
+            document.getElementById('list').innerHTML = data;
         })
         .catch(error => console.error('Error:', error));
 }
