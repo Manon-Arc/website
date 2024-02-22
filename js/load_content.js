@@ -10,9 +10,10 @@ function selectedCategory(divCliquee, url) {
         }
     }
     divCliquee.classList.add('selected-category');
-    loadContent(url)
-    addOpacityListeners("bluetooth")
-    addOpacityListeners("moduleESP")
+    loadContent(url).then(()=>{
+        addOpacityListeners("bluetooth")
+        addOpacityListeners("moduleESP")
+    })
 }
 
 function loadContent(url) {
