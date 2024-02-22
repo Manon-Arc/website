@@ -6,15 +6,16 @@ function addOpacityListeners(target) {
     console.log(projectDetail)
 
     const projectLink = document.querySelector('.link-zone.' + target);
-    console.log(projectLink)
 
 projectDesc.addEventListener('mouseenter', () => {
     projectDesc.style.opacity = '0';
+    console.log("enyer")
     projectDetail.style.opacity = '1';
 });
 
 projectDesc.addEventListener('mouseleave', () => {
     projectDesc.style.opacity = '1';
+    console.log("exit")
     projectDetail.style.opacity = '0';
 });
 
