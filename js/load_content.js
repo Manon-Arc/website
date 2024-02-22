@@ -1,5 +1,14 @@
 import { addOpacityListeners } from "./js_hover/hover_proj.js";
 
+function loadFooter() {
+    fetch('../html/templates/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.body.insertAdjacentHTML('beforeend', data);
+        })
+        .catch(error => console.error('Error:', error));
+}
+
 function loadContent(url) {
     fetch(url)
         .then(response => response.text())
@@ -8,15 +17,6 @@ function loadContent(url) {
             if (count == 1) {
                 loadFooter()
             }
-        })
-        .catch(error => console.error('Error:', error));
-}
-
-function loadFooter() {
-    fetch('../html/templates/footer.html')
-        .then(response => response.text())
-        .then(data => {
-            document.body.insertAdjacentHTML('beforeend', data);
         })
         .catch(error => console.error('Error:', error));
 }
