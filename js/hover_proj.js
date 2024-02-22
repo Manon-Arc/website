@@ -1,8 +1,12 @@
 function addOpacityListeners(target) {
 
     const projectDesc = document.querySelector('.project-desc.' + target);
+    console.log(projectDesc)
     const projectDetail = document.querySelector('.project-detail.' + target);
+    console.log(projectDetail)
+
     const projectLink = document.querySelector('.link-zone.' + target);
+    console.log(projectLink)
 
 projectDesc.addEventListener('mouseenter', () => {
     projectDesc.style.opacity = '0';
@@ -25,8 +29,10 @@ projectLink.addEventListener('mouseleave', () => {
 });
 }
 
+addOpacityListeners("bluetooth")
+
+addOpacityListeners("moduleESP")
 addOpacityListeners("marcus")
 addOpacityListeners("robolympiades")
 addOpacityListeners("assistant")
 addOpacityListeners("mecanum")
-addOpacityListeners("moduleESP")
