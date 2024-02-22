@@ -107,7 +107,7 @@
 }
 
 .project-desc-D {
-    padding-top: 15dvh;
+    padding-top: 12dvh;
 
     margin-left: 5dvw;
 }
@@ -156,7 +156,7 @@
     flex-direction: column;
     gap: 1px;
 }
-.third-line {
+.first-line {
     display: flex;
     flex-direction: row;
     align-items: center;

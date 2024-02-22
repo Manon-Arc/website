@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="../style/style_realisation.css">
     <link rel="stylesheet" href="../style/style_gen.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-	<title>Portfolio</title>
-	<link rel="shortcut icon" href="../Asset/PortFolio_Icone.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="../Asset/PortFolio_Icone.png" type="image/x-icon">
 </head>
 
 <body>
@@ -48,7 +48,8 @@
     </div>
     <div class="category-proj">
         <div>
-            <p class="txt-category-real selected-category" onclick="selectedCategory(this, '../html/prototype.html')">Prototype</p>
+            <p class="txt-category-real selected-category" onclick="selectedCategory(this, '../html/prototype.html')">
+                Prototype</p>
         </div>
         <div class="line-category"></div>
         <div>
@@ -75,7 +76,238 @@
     <div class="project-list" id="list">
 
 
-    </div>
+        <div class="project-unit G">
+            <div class="pic-project">
+                <a href="/Asset/project/marcus.png" target="_blank">
+                    <img src="/Asset/project/marcus.png" alt="">
+                </a>
+            </div>
+            <div class="project-prez">
+                <div class="project-title">
+                    <p class="txt-title project-name">Marcus</p>
+                    <div class="under-line"></div>
+                </div>
+        
+                <div class="project-desc marcus">
+                    <p class="txt">Création d'un prototype de robot pompier en 5 jours lors d'un Hackaton.</p>
+                    <div class="btn-more">
+                        <img src="/Asset/plus.png" alt="">
+                    </div>
+                </div>
+                <div class="project-detail marcus">
+                    <div class="fisrt-line">
+                        <div class="language">
+                            <img class="pic-project-prez" src="/Asset/coding_white.png" alt="">
+                            <p class="txt">Python / micropython</p>
+                        </div>
+                        <div class="software">
+                            <img class="pic-project-prez" src="/Asset/software.png" alt="">
+                            <p class="txt">Fusion360 / Kicad</p>
+                        </div>
+                    </div>
+                    <div class="features">
+                        <img class="pic-project-prez" src="/Asset/feature.png" alt="">
+                        <p class="txt">
+                            <span>Contrôle via une manette connectée en ESP-Now (150m en conditions idéales),</span>
+                            <span>Capacité de se déplacer dans huit directions différentes (roues mécanum),</span>
+                            <span>Gyrophare rotatif pour signaler les interventions d'urgence,</span>
+                            <span>Canon à eau offrant une liberté de mouvement de 45° en hauteur,</span>
+                            <span>Emplacement de fixation pour l'ajout d'accessoires (phare, mégaphone).</span>
+                        </p>
+                    </div>
+                    <div class="team">
+                        <img class="pic-project-prez" src="/Asset/user.png" alt="">
+                        <p class="txt">Collaboratif</p>
+                    </div>
+                    <div class="link-zone marcus">
+                        <p class="logiciel-link">
+                            <span>lien du projet : </span>
+                            <span>
+                                <a class="link-proj" href="https://github.com/Manon-Arc/Marcus_Hackathon"
+                                    target="_blank">https://github.com/Manon-Arc/Marcus_Hackathon</a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        <div class="project-unit D">
+            <div class="project-prez">
+                <div class="project-title project-title-D">
+                    <p class="txt-title project-name">Robolympiades</p>
+                    <div class="under-line"></div>
+                </div>
+                <div class="project-desc project-desc-D robolympiades">
+                    <p class="txt">Compétiton de robotique mobile, 4 équipes s'affrontent sur 4 épreuves :<br><br>
+                        - Football : les règle classique du sport,<br>
+                        - Clean the factory : récupérer un maximum de billes et les ramener dans notre zone,<br>
+                        - Mazerush : sortir le plus vite possible d'un labyrinthe (autonome),<br>
+                        - Tower défense : récupérer des palets et les ramener dans notre zone (bonus si empilé).<br><br>
+                        Évenement ouvert au public ayant rassemblé 200 spectateurs ()
+                    </p>
+                    <div class="btn-more">
+                        <img src="/Asset/plus.png" alt="">
+                    </div>
+                </div>
+                <div class="project-detail robolympiades project-detail-D">
+                    <div class="fisrt-line">
+                        <div class="language">
+                            <img class="pic-project-prez" src="/Asset/coding_white.png" alt="">
+                            <p class="txt">Python / micropython, HTML, CSS, Javascript, SQLite</p>
+                        </div>
+                        <div class="software">
+                            <img class="pic-project-prez" src="/Asset/software.png" alt="">
+                            <p class="txt">Fusion360 / Kicad</p>
+                        </div>
+                    </div>
+                    <div class="features">
+                        <img class="pic-project-prez" src="/Asset/feature.png" alt="">
+                        <p class="txt">
+                            <span>Contrôle via une interface web (HTTP, socket TCP),</span>
+                            <span>Détachable en deux robots distincts (contrôlable séparément en simultanée),</span>
+                            <span>Équipé d'une pince permettant d'empiler des palets,</span>
+                            <span>Possibilié de transporter deux tours de palets,</span>
+                            <span>Tête qui se lève pour récupérer un cube sur l'avant.</span>
+                        </p>
+                    </div>
+                        <div class="team">
+                            <img class="pic-project-prez" src="/Asset/user.png" alt="">
+                            <p class="txt">Collaboratif</p>
+                        </div>
+                    <div class="link-zone robolympiades">
+                        <p class="logiciel-link">
+                            <span>lien du projet : </span>
+                            <span>
+                                <a class="link-proj" href="https://gitlab.com/baptgdb/robolympiades-2022_2023/"
+                                    target="_blank">https://gitlab.com/baptgdb/robolympiades-2022_2023/</a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="pic-project">
+                <a href="/Asset/project/robolympiades.png" target="_blank">
+                    <img src="/Asset/project/robolympiades.png" alt="">
+                </a>
+            </div>
+        </div>
+        
+        
+        
+        <div class="project-unit G">
+            <div class="pic-project">
+                <img src="/Asset/project/assistant.png" alt="">
+            </div>
+            <div class="project-prez">
+                <div class="project-title">
+                    <p class="txt-title project-name">Assistant mobile sur rail</p>
+                    <div class="under-line"></div>
+                </div>
+        
+                <div class="project-desc project-desc-G assistant">
+                    <p class="txt">Prototype de robot assistant mobile sur rail. Ce robot peut être utilisé comme une troisième
+                        main, un support d'outils ou un dispositif de rangement.</p>
+                    <div class="btn-more">
+                        <img src="/Asset/plus.png" alt="">
+                    </div>
+                </div>
+                <div class="project-detail assistant">
+                    <div class="first-line">
+                        <div class="language">
+                            <img class="pic-project-prez" src="/Asset/coding_white.png" alt="">
+                            <p class="txt">Python / micropython</p>
+                        </div>
+                        <div class="software">
+                            <img class="pic-project-prez" src="/Asset/software.png" alt="">
+                            <p class="txt">Fusion360 / Kicad</p>
+                        </div>
+                    </div>
+                    <div class="features">
+                        <img class="pic-project-prez" src="/Asset/feature.png" alt="">
+                        <p class="txt">
+                            <span>Sélection du poste de travail à l'aide d'un bouton,</span>
+                            <span>Déplacement automatiquement vers le poste sélectionné,</span>
+                            <span>Capteur de proximité inductif pour identifier l'emplacement du poste de travail.</span>
+                        </p>
+                    </div>
+                    <div class="team">
+                        <img class="pic-project-prez" src="/Asset/user.png" alt="">
+                        <p class="txt">Individuel</p>
+                    </div>
+        
+                    <div class="link-zone assistant">
+                        <p class="logiciel-link">
+                            <span>lien du projet : </span>
+                            <span>
+                                <a class="link-proj" href="https://github.com/Manon-Arc/Robot_sur_rail"
+                                    target="_blank">https://github.com/Manon-Arc/Robot_sur_rail</a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="project-unit D">
+            <div class="project-prez">
+                <div class="project-title project-title-D">
+                    <p class="txt-title project-name">Robot mécanum</p>
+                    <div class="under-line"></div>
+                </div>
+                <div class="project-desc project-desc-D mecanum">
+                    <p class="txt">Prototype de robot mécanum télécommandé.
+                    </p>
+                    <div class="btn-more">
+                        <img src="/Asset/plus.png" alt="">
+                    </div>
+                </div>
+                <div class="project-detail mecanum project-detail-D">
+                    <div class="first-line">
+                        <div class="language">
+                            <img class="pic-project-prez" src="/Asset/coding_white.png" alt="">
+                            <p class="txt">Python / micropython, HTML, CSS, Javascript</p>
+                        </div>
+                        <div class="software">
+                            <img class="pic-project-prez" src="/Asset/software.png" alt="">
+                            <p class="txt">Fusion360 / Kicad</p>
+                        </div>
+                    </div>
+        
+                    <div class="features">
+                        <img class="pic-project-prez" src="/Asset/feature.png" alt="">
+                        <p class="txt">
+                            <span>Serveur web directement hébergé sur le robot,</span>
+                            <span>Contrôle via une interface web,</span>
+                            <span>Capacité de se déplacer dans huit directions différentes (roues mécanum),</span>
+                        </p>
+                    </div>
+                    <div class="team">
+                        <img class="pic-project-prez" src="/Asset/user.png" alt="">
+                        <p class="txt">Individuel</p>
+                    </div>
+        
+                    <div class="link-zone mecanum">
+                        <p class="logiciel-link">
+                            <span>lien du projet : </span>
+                            <span>
+                                <a class="link-proj" href="https://github.com/Manon-Arc/code_holonome/"
+                                    target="_blank">https://github.com/Manon-Arc/code_holonome/</a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="pic-project">
+                <img src="/Asset/project/holonome.png" alt="">
+            </div>
+        </div>
+
+
     <div class="footer" id="4">
         <div>
             <p class="contacts">Contacts</p>
@@ -125,5 +357,5 @@
 <script type="module" src="../js/js_hover/hover_concepelec.js"></script>
 <script type="module" src="../js/js_hover/hover_projdev.js"></script>
 <script type="module" src="../js/js_hover/hover_concepmeca.js"></script>
-<script src="../js/js_hover/hover_proj.js"></script>
+
 </html>
