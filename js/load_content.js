@@ -1,22 +1,5 @@
 import { addOpacityListeners } from "./js_hover/hover_proj.js";
 
-let count = 0
-function selectedCategory(divCliquee, url) {
-    var elements = document.getElementsByClassName('txt-category-real');
-    count ++
-    for (let j = 0; j < elements.length; j++) {
-        if (elements[j].classList.contains('selected-category')) {
-            elements[j].classList.remove('selected-category');
-        }
-    }
-    divCliquee.classList.add('selected-category');
-    loadContent(url).then(()=>{
-        console.log("yop")
-        addOpacityListeners("bluetooth")
-        addOpacityListeners("moduleESP")
-    })
-}
-
 function loadContent(url) {
     fetch(url)
         .then(response => response.text())
@@ -36,4 +19,22 @@ function loadFooter() {
             document.body.insertAdjacentHTML('beforeend', data);
         })
         .catch(error => console.error('Error:', error));
+}
+
+
+let count = 0
+function selectedCategory(divCliquee, url) {
+    var elements = document.getElementsByClassName('txt-category-real');
+    count ++
+    for (let j = 0; j < elements.length; j++) {
+        if (elements[j].classList.contains('selected-category')) {
+            elements[j].classList.remove('selected-category');
+        }
+    }
+    divCliquee.classList.add('selected-category');
+    loadContent(url).then(()=>{
+        console.log("yop")
+        addOpacityListeners("bluetooth")
+        addOpacityListeners("moduleESP")
+    })
 }
