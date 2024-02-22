@@ -1,5 +1,7 @@
+let count = 0
 function selectedCategory(divCliquee, url) {
     var elements = document.getElementsByClassName('txt-category-real');
+    count ++
     for (let j = 0; j < elements.length; j++) {
         if (elements[j].classList.contains('selected-category')) {
             elements[j].classList.remove('selected-category');
@@ -9,13 +11,14 @@ function selectedCategory(divCliquee, url) {
     loadContent(url)
 }
 
-
 function loadContent(url) {
     fetch(url)
         .then(response => response.text())
         .then(data => {
             document.getElementById('list').innerHTML = data;
-            loadFooter()
+            if (count == 1) {
+                loadFooter()
+            }
         })
         .catch(error => console.error('Error:', error));
 }
@@ -24,7 +27,7 @@ function loadFooter() {
     fetch('../html/templates/footer.html')
         .then(response => response.text())
         .then(data => {
-            document.body.insertAdjacentHTML('beforeend', data); // Insère le pied de page à la fin du corps du document
+            document.body.insertAdjacentHTML('beforeend', data);
         })
         .catch(error => console.error('Error:', error));
 }
