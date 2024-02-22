@@ -1,4 +1,4 @@
-function addOpacityListeners(target) {
+export function addOpacityListeners(target) {
 
     const projectDesc = document.querySelector('.project-desc.' + target);
     console.log(projectDesc)
@@ -29,5 +29,3 @@ projectLink.addEventListener('mouseleave', () => {
     projectDetail.style.opacity = '0';
 });
 }
-
-export * from "hover_proj";
