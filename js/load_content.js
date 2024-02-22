@@ -1,3 +1,5 @@
+import { addOpacityListeners } from "./js_hover/hover_proj.js";
+
 let count = 0
 function selectedCategory(divCliquee, url) {
     var elements = document.getElementsByClassName('txt-category-real');
@@ -9,6 +11,8 @@ function selectedCategory(divCliquee, url) {
     }
     divCliquee.classList.add('selected-category');
     loadContent(url)
+    addOpacityListeners("bluetooth")
+    addOpacityListeners("moduleESP")
 }
 
 function loadContent(url) {
