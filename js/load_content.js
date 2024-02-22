@@ -15,6 +15,16 @@ function loadContent(url) {
         .then(response => response.text())
         .then(data => {
             document.getElementById('list').innerHTML = data;
+            loadFooter()
+        })
+        .catch(error => console.error('Error:', error));
+}
+
+function loadFooter() {
+    fetch('../html/templates/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.body.insertAdjacentHTML('beforeend', data); // Insère le pied de page à la fin du corps du document
         })
         .catch(error => console.error('Error:', error));
 }
