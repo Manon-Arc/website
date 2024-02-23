@@ -24,3 +24,5 @@ projectLink.addEventListener('mouseleave', () => {
     projectDetail.style.opacity = '0';
 });
 }
+
+module.exports = addOpacityListeners
