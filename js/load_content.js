@@ -1,4 +1,4 @@
-import { addOpacityListeners } from "./hover_proj";
+import { addOpacityListeners } from "./hover_proj.js";
 
 function loadFooter() {
     fetch('../html/templates/footer.html')
