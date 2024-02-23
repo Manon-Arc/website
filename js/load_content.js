@@ -20,9 +20,8 @@ function loadContent(url) {
         .catch(error => console.error('Error:', error));
 }
 
-
 let count = 0
-export function selectedCategory(divCliquee, url) {
+function selectedCategory(divCliquee, url) {
     var elements = document.getElementsByClassName('txt-category-real');
     count ++
     for (let j = 0; j < elements.length; j++) {
