@@ -1,4 +1,5 @@
 import { addOpacityListeners } from './js_hover/hover_proj'
+
 function loadFooter() {
     fetch('../html/templates/footer.html')
         .then(response => response.text())
