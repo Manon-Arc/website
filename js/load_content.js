@@ -54,18 +54,6 @@ function loadContent(url) {
         .then(response => response.text())
         .then(data => {
             document.getElementById('list').innerHTML = data;
-            //if (count == 1) {
-              //  return loadFooter();
-            //}
-        })
-        .catch(error => console.error('Error:', error));
-}
-
-function loadFooter() {
-    return fetch('../html/templates/footer.html')
-        .then(response => response.text())
-        .then(data => {
-            document.body.insertAdjacentHTML('beforeend', data);
         })
         .catch(error => console.error('Error:', error));
 }
