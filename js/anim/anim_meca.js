@@ -24,6 +24,7 @@ function animerM() {
 }
 
 containerM.addEventListener('mouseenter', async function () {
+    logoFusion.style.opacity = 1
     boucleUpM(160);
     await sleep(500)
     logoFusion.style.zIndex = 3

@@ -43,12 +43,16 @@ function animerE() {
 }
 
 containerE.addEventListener('mouseenter', async function () {
+    logoAltium.style.opacity = 1
+    logoKicad.style.opacity = 1
+    logoCM.style.opacity = 1
+
     boucleUpE(160);
     await sleep(500)
+
     logoAltium.style.zIndex = 3
     logoKicad.style.zIndex = 3
     logoCM.style.zIndex = 3
-
 });
 
 containerE.addEventListener('mouseleave', function () {

@@ -70,19 +70,27 @@ function animerD() {
 }
 
 containerD.addEventListener('mouseenter', async function () {
+    logoPython.style.opacity = 1
+    logoCS.style.opacity = 1
+    logoArduino.style.opacity = 1
+    logoJava.style.opacity = 1
+    logoCplus.style.opacity = 1
+    logoC.style.opacity = 1
+
     boucleUpD(160);
     await sleep(500)
+
     logoPython.style.zIndex = 3
     logoCS.style.zIndex = 3
     logoArduino.style.zIndex = 3
     logoJava.style.zIndex = 3
     logoCplus.style.zIndex = 3
     logoC.style.zIndex = 3
-
 });
 
 containerD.addEventListener('mouseleave', function () {
     boucleDownD(80);
+
     logoPython.style.zIndex = 1
     logoCS.style.zIndex = 1
     logoArduino.style.zIndex = 1
