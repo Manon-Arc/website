@@ -90,6 +90,10 @@ body {
     font-weight: medium;
 }
 
+.txt-category-real:hover {
+    cursor: pointer;
+}
+
 .txt-Portfolio {
     font-size: 1.3rem;
     color: var(--main-blue);
