@@ -13,6 +13,7 @@
     <title>Portfolio</title>
     <link rel="shortcut icon" href="../Asset/PortFolio_Icone.png" type="image/x-icon">
 </head>
+
 <body>
     <header class="header">
         <div class="header-left">
@@ -47,29 +48,41 @@
     </div>
     <div class="category-proj">
         <div>
-            <p class="Proto txt-category-real selected-category" onclick="selectedCategory(this, '../html/templates/prototype.html')">
-                Prototype</p>
+            <a href="">
+                <p class="Proto txt-category-real selected-category"
+                    onclick="selectedCategory(this, '../html/templates/prototype.html')">
+                    Prototype</p>
+            </a>
         </div>
         <div class="line-category"></div>
         <div>
-            <p class="ConcElec txt-category-real" onclick="selectedCategory(this, '../html/templates/conception_elec.html')">
-                <span>Conception</span>
-                <span>électronique</span>
-            </p>
+            <a href="">
+                <p class="ConcElec txt-category-real"
+                    onclick="selectedCategory(this, '../html/templates/conception_elec.html')">
+                    <span>Conception</span>
+                    <span>électronique</span>
+                </p>
+            </a>
         </div>
         <div class="line-category"></div>
         <div>
-            <p class="ProjDev txt-category-real" onclick="selectedCategory(this, '../html/templates/projet_dev.html')">
-                <span>Projet</span>
-                <span>développement</span>
-            </p>
+            <a href="">
+                <p class="ProjDev txt-category-real"
+                    onclick="selectedCategory(this, '../html/templates/projet_dev.html')">
+                    <span>Projet</span>
+                    <span>développement</span>
+                </p>
+            </a>
         </div>
         <div class="line-category"></div>
         <div>
-            <p class="ConcMeca txt-category-real" onclick="selectedCategory(this, '../html/templates/conception_meca.html')">
-                <span>Conception</span>
-                <span>mécanique</span>
-            </p>
+            <a href="">
+                <p class="ConcMeca txt-category-real"
+                    onclick="selectedCategory(this, '../html/templates/conception_meca.html')">
+                    <span>Conception</span>
+                    <span>mécanique</span>
+                </p>
+            </a>
         </div>
     </div>
     <div class="project-list" id="list">
@@ -85,7 +98,7 @@
                     <p class="txt-title project-name">Marcus</p>
                     <div class="under-line"></div>
                 </div>
-        
+
                 <div class="project-desc marcus">
                     <p class="txt">Création d'un prototype de robot pompier en 5 jours lors d'un Hackaton.</p>
                     <div class="btn-more">
@@ -129,10 +142,10 @@
                 </div>
             </div>
         </div>
-        
-        
-        
-        
+
+
+
+
         <div class="project-unit D">
             <div class="project-prez">
                 <div class="project-title project-title-D">
@@ -172,10 +185,10 @@
                             <span>Tête qui se lève pour récupérer un cube sur l'avant.</span>
                         </p>
                     </div>
-                        <div class="team">
-                            <img class="pic-project-prez" src="../Asset/user.png" alt="">
-                            <p class="txt">Collaboratif</p>
-                        </div>
+                    <div class="team">
+                        <img class="pic-project-prez" src="../Asset/user.png" alt="">
+                        <p class="txt">Collaboratif</p>
+                    </div>
                     <div class="link-zone robolympiades">
                         <p class="logiciel-link">
                             <span>lien du projet : </span>
@@ -193,9 +206,9 @@
                 </a>
             </div>
         </div>
-        
-        
-        
+
+
+
         <div class="project-unit G">
             <div class="pic-project">
                 <a href="../Asset/project/assistant.png" target="_blank">
@@ -207,9 +220,10 @@
                     <p class="txt-title project-name">Assistant mobile sur rail</p>
                     <div class="under-line"></div>
                 </div>
-        
+
                 <div class="project-desc project-desc-G assistant">
-                    <p class="txt">Prototype de robot assistant mobile sur rail. Ce robot peut être utilisé comme une troisième
+                    <p class="txt">Prototype de robot assistant mobile sur rail. Ce robot peut être utilisé comme une
+                        troisième
                         main, un support d'outils ou un dispositif de rangement.</p>
                     <div class="btn-more">
                         <img src="../Asset/plus.png" alt="">
@@ -231,14 +245,15 @@
                         <p class="txt">
                             <span>Sélection du poste de travail à l'aide d'un bouton,</span>
                             <span>Déplacement automatiquement vers le poste sélectionné,</span>
-                            <span>Capteur de proximité inductif pour identifier l'emplacement du poste de travail.</span>
+                            <span>Capteur de proximité inductif pour identifier l'emplacement du poste de
+                                travail.</span>
                         </p>
                     </div>
                     <div class="team">
                         <img class="pic-project-prez" src="../Asset/user.png" alt="">
                         <p class="txt">Individuel</p>
                     </div>
-        
+
                     <div class="link-zone assistant">
                         <p class="logiciel-link">
                             <span>lien du projet : </span>
@@ -251,8 +266,8 @@
                 </div>
             </div>
         </div>
-        
-        
+
+
         <div class="project-unit D">
             <div class="project-prez">
                 <div class="project-title project-title-D">
@@ -277,7 +292,7 @@
                             <p class="txt">Fusion360 / Kicad</p>
                         </div>
                     </div>
-        
+
                     <div class="features">
                         <img class="pic-project-prez" src="../Asset/feature.png" alt="">
                         <p class="txt">
@@ -290,7 +305,7 @@
                         <img class="pic-project-prez" src="../Asset/user.png" alt="">
                         <p class="txt">Individuel</p>
                     </div>
-        
+
                     <div class="link-zone mecanum">
                         <p class="logiciel-link">
                             <span>lien du projet : </span>
@@ -349,8 +364,9 @@
         </div>
     </div>
     <img class="circuit-footer" src="../Asset/circuit.png" alt="">
-<script src="../js/header.js"></script>
-<script src="../js/load_content.js"></script>
-<script type="module" src="../js/js_hover/hover_prototype.js"></script>*
+    <script src="../js/header.js"></script>
+    <script src="../js/load_content.js"></script>
+    <script type="module" src="../js/js_hover/hover_prototype.js"></script>*
 </body>
+
 </html>
