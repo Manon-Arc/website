@@ -12,6 +12,13 @@ function selectedCategory(divCliquee, url) {
     loadContent(url)
         .then(() => {
             console.log(divCliquee.classList);
+            console.log(divCliquee.classList.length());
+
+            console.log(divCliquee.classList[0]);
+            console.log(divCliquee.classList[1]);
+            console.log(divCliquee.classList[2]);
+            console.log(divCliquee.classList[3]);
+
             addOpacityListeners("bluetooth");
             addOpacityListeners("moduleESP");
             count++;
