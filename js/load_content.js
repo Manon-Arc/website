@@ -7,14 +7,14 @@ function selectedCategory(divCliquee, url) {
             elements[j].classList.remove('selected-category');
         }
     }
-    divCliquee.classList.add('selected-category');
+    divCliquee.classList.add('selected-category', async function (){
     loadContent(url)
-    console.log(divCliquee)
+    console.log(divCliquee);
+    await sleep(500)
     addOpacityListeners("bluetooth")
     addOpacityListeners("moduleESP")
     count++
-    }
-
+    });}
 
 function loadContent(url) {
     fetch(url)
@@ -66,3 +66,8 @@ projectLink.addEventListener('mouseleave', () => {
     projectDetail.style.opacity = '0';
 });
 }
+
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
