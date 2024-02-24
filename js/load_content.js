@@ -12,7 +12,7 @@ function selectedCategory(divCliquee, url) {
     loadContent(url)
         .then(() => {
             console.log(divCliquee.classList);
-            console.log(divCliquee.classList.length());
+            console.log(divCliquee.classList.length);
 
             console.log(divCliquee.classList[0]);
             console.log(divCliquee.classList[1]);
