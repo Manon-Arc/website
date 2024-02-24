@@ -88,15 +88,24 @@ containerD.addEventListener('mouseenter', async function () {
     logoC.style.zIndex = 3
 });
 
-containerD.addEventListener('mouseleave', function () {
+containerD.addEventListener('mouseleave', async function () {
     boucleDownD(80);
-
     logoPython.style.zIndex = 1
     logoCS.style.zIndex = 1
     logoArduino.style.zIndex = 1
     logoJava.style.zIndex = 1
     logoCplus.style.zIndex = 1
     logoC.style.zIndex = 1
+
+    await sleep(200)
+
+    logoPython.style.opacity = 0
+    logoCS.style.opacity = 0
+    logoArduino.style.opacity = 0
+    logoJava.style.opacity = 0
+    logoCplus.style.opacity = 0
+    logoC.style.opacity = 0
+
 
 
 });

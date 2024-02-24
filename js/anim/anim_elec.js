@@ -55,12 +55,17 @@ containerE.addEventListener('mouseenter', async function () {
     logoCM.style.zIndex = 3
 });
 
-containerE.addEventListener('mouseleave', function () {
+containerE.addEventListener('mouseleave', async function () {
     boucleDownE(80);
     logoAltium.style.zIndex = 1
     logoKicad.style.zIndex = 1
     logoCM.style.zIndex = 1
 
+    await sleep(200)
+
+    logoAltium.style.opacity = 0
+    logoKicad.style.opacity = 0
+    logoCM.style.opacity = 0
 });
 
 animerE();

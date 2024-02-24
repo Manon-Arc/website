@@ -30,9 +30,12 @@ containerM.addEventListener('mouseenter', async function () {
     logoFusion.style.zIndex = 3
 });
 
-containerM.addEventListener('mouseleave', function () {
+containerM.addEventListener('mouseleave', async function () {
     boucleDownM(80);
     logoFusion.style.zIndex = 1
+    await sleep(200)
+    logoFusion.style.opacity = 0
+
 });
 
 animerM();
