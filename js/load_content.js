@@ -1,7 +1,5 @@
 let count = 0
 
-const 
-
 function selectedCategory(divCliquee, url) {
     var elements = document.getElementsByClassName('txt-category-real');
     for (let j = 0; j < elements.length; j++) {
