@@ -1,5 +1,3 @@
-import { addOpacityListeners } from "./hover_proj.js";
-
 let count = 0
 
 function selectedCategory(divCliquee, url) {
@@ -37,4 +35,31 @@ function loadFooter() {
             document.body.insertAdjacentHTML('beforeend', data);
         })
         .catch(error => console.error('Error:', error));
+}
+
+export function addOpacityListeners(target) {
+
+    var projectDesc = document.querySelector('.project-desc.' + target);
+    var projectDetail = document.querySelector('.project-detail.' + target);
+    var projectLink = document.querySelector('.link-zone.' + target);
+
+projectDesc.addEventListener('mouseenter', () => {
+    projectDesc.style.opacity = '0';
+    projectDetail.style.opacity = '1';
+});
+
+projectDesc.addEventListener('mouseleave', () => {
+    projectDesc.style.opacity = '1';
+    projectDetail.style.opacity = '0';
+});
+
+projectLink.addEventListener('mouseenter', () => {
+    projectDesc.style.opacity = '0';
+    projectDetail.style.opacity = '1';
+});
+
+projectLink.addEventListener('mouseleave', () => {
+    projectDesc.style.opacity = '1';
+    projectDetail.style.opacity = '0';
+});
 }
