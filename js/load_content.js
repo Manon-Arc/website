@@ -16,9 +16,6 @@ function selectedCategory(divCliquee, url) {
     
     loadContent(url)
         .then(() => {
-            console.log(divCliquee.classList);
-            console.log(divCliquee.classList[0]);
-
             switch (divCliquee.classList[0]) {
                 case "Proto":
                     for (let i = 0; i < Proto.length; i++) {
