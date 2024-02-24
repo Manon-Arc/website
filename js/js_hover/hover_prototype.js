@@ -1,5 +1,5 @@
-import { addOpacityListeners } from "../load_content.js";
-addOpacityListeners("marcus")
-addOpacityListeners("robolympiades")
-addOpacityListeners("assistant")
-addOpacityListeners("mecanum")
+import { addOpacityListenersExp } from "./hover_function.js";
+addOpacityListenersExp("marcus")
+addOpacityListenersExp("robolympiades")
+addOpacityListenersExp("assistant")
+addOpacityListenersExp("mecanum")
