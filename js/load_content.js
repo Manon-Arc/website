@@ -1,5 +1,11 @@
 let count = 0;
 
+const cat1 = ["marcus", "robolympiades", "assistant", "mecanum"]
+const cat2 = ["moduleESP", "bluetooth"]
+const cat3 = ["danmashi", "weatherapp"]
+const cat4 = ["pince", "bb8", "hub", "ventilo"]
+
+
 function selectedCategory(divCliquee, url) {
     var elements = document.getElementsByClassName('txt-category-real');
     for (let j = 0; j < elements.length; j++) {
@@ -12,15 +18,10 @@ function selectedCategory(divCliquee, url) {
     loadContent(url)
         .then(() => {
             console.log(divCliquee.classList);
-            console.log(divCliquee.classList.length);
-
-            console.log(divCliquee.classList[0]);
             console.log(divCliquee.classList[1]);
-            console.log(divCliquee.classList[2]);
-            console.log(divCliquee.classList[3]);
-
-            addOpacityListeners("bluetooth");
-            addOpacityListeners("moduleESP");
+            for (let i = 0; i < divCliquee.classList[1].length; i++) {
+                addOpacityListeners(divCliquee.classList[i])
+            }
             count++;
         })
         .catch(error => console.error('Error:', error));
