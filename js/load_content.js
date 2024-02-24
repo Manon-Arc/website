@@ -1,4 +1,4 @@
-let count = 0
+let count = 0;
 
 function selectedCategory(divCliquee, url) {
     var elements = document.getElementsByClassName('txt-category-real');
@@ -7,29 +7,32 @@ function selectedCategory(divCliquee, url) {
             elements[j].classList.remove('selected-category');
         }
     }
-    divCliquee.classList.add('selected-category', async function (){
+    divCliquee.classList.add('selected-category');
+    
     loadContent(url)
-    console.log(divCliquee);
-    await sleep(500)
-    addOpacityListeners("bluetooth")
-    addOpacityListeners("moduleESP")
-    count++
-    });}
+        .then(() => {
+            console.log(divCliquee);
+            addOpacityListeners("bluetooth");
+            addOpacityListeners("moduleESP");
+            count++;
+        })
+        .catch(error => console.error('Error:', error));
+}
 
 function loadContent(url) {
-    fetch(url)
+    return fetch(url)
         .then(response => response.text())
         .then(data => {
             document.getElementById('list').innerHTML = data;
             if (count == 1) {
-                loadFooter()
+                return loadFooter();
             }
         })
         .catch(error => console.error('Error:', error));
 }
 
 function loadFooter() {
-    fetch('../html/templates/footer.html')
+    return fetch('../html/templates/footer.html')
         .then(response => response.text())
         .then(data => {
             document.body.insertAdjacentHTML('beforeend', data);
@@ -66,8 +69,3 @@ projectLink.addEventListener('mouseleave', () => {
     projectDetail.style.opacity = '0';
 });
 }
-
-
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-  }
