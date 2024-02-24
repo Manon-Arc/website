@@ -54,9 +54,9 @@ function loadContent(url) {
         .then(response => response.text())
         .then(data => {
             document.getElementById('list').innerHTML = data;
-            if (count == 1) {
-                return loadFooter();
-            }
+            //if (count == 1) {
+              //  return loadFooter();
+            //}
         })
         .catch(error => console.error('Error:', error));
 }
@@ -73,11 +73,8 @@ function loadFooter() {
 function addOpacityListeners(target) {
 
     var projectDesc = document.querySelector('.project-desc.' + target);
-    console.log(projectDesc)
     var projectDetail = document.querySelector('.project-detail.' + target);
-    console.log(projectDetail)
     var projectLink = document.querySelector('.link-zone.' + target);
-    console.log(projectLink)
 
 projectDesc.addEventListener('mouseenter', () => {
     projectDesc.style.opacity = '0';
