@@ -1,5 +1,3 @@
-let count = 0;
-
 const Proto = ["marcus", "robolympiades", "assistant", "mecanum"]
 const ConcElec = ["moduleESP", "bluetooth"]
 const ProjDev = ["danmashi", "weatherapp"]
@@ -41,8 +39,6 @@ function selectedCategory(divCliquee, url) {
                     console.log("Classe non reconnue :", divCliquee.classList[0]);
                     break;
             }
-            console.log(count)
-            count++;
         })
         .catch(error => console.error('Error:', error));
 }
