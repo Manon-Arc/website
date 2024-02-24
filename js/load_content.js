@@ -1,10 +1,9 @@
 let count = 0;
 
-const cat1 = ["marcus", "robolympiades", "assistant", "mecanum"]
-const cat2 = ["moduleESP", "bluetooth"]
-const cat3 = ["danmashi", "weatherapp"]
-const cat4 = ["pince", "bb8", "hub", "ventilo"]
-
+const Proto = ["marcus", "robolympiades", "assistant", "mecanum"]
+const ConcElec = ["moduleESP", "bluetooth"]
+const ProjDev = ["danmashi", "weatherapp"]
+const ConcMeca = ["pince", "bb8", "hub", "ventilo"]
 
 function selectedCategory(divCliquee, url) {
     var elements = document.getElementsByClassName('txt-category-real');
@@ -21,33 +20,31 @@ function selectedCategory(divCliquee, url) {
             console.log(divCliquee.classList[0]);
 
             switch (divCliquee.classList[0]) {
-                case "cat1":
-                    for (let i = 0; i < cat1.length; i++) {
-                        addOpacityListeners(cat1[i]);
+                case "Proto":
+                    for (let i = 0; i < Proto.length; i++) {
+                        addOpacityListeners(Proto[i]);
                     }
                     break;
-                case "cat2":
-                    for (let i = 0; i < cat2.length; i++) {
-                        addOpacityListeners(cat2[i]);
+                case "ConcElec":
+                    for (let i = 0; i < ConcElec.length; i++) {
+                        addOpacityListeners(ConcElec[i]);
                     }
                     break;
-                case "cat3":
-                    for (let i = 0; i < cat3.length; i++) {
-                        addOpacityListeners(cat3[i]);
+                case "ProjDev":
+                    for (let i = 0; i < ProjDev.length; i++) {
+                        addOpacityListeners(ProjDev[i]);
                     }
                     break;
-                case "cat4":
-                    for (let i = 0; i < cat4.length; i++) {
-                        addOpacityListeners(cat4[i]);
+                case "ConcMeca":
+                    for (let i = 0; i < ConcMeca.length; i++) {
+                        addOpacityListeners(ConcMeca[i]);
                     }
                     break;
                 default:
                     console.log("Classe non reconnue :", divCliquee.classList[0]);
                     break;
             }
-
-            count++; // Incrémentation du compteur après le traitement
-
+            count++;
         })
         .catch(error => console.error('Error:', error));
 }
