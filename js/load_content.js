@@ -38,7 +38,3 @@ function loadFooter() {
         })
         .catch(error => console.error('Error:', error));
 }
-
-function test() {
-    console.log("test")
-}
