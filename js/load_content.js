@@ -37,7 +37,7 @@ function loadFooter() {
         .catch(error => console.error('Error:', error));
 }
 
-export function addOpacityListeners(target) {
+function addOpacityListeners(target) {
 
     var projectDesc = document.querySelector('.project-desc.' + target);
     var projectDetail = document.querySelector('.project-detail.' + target);
