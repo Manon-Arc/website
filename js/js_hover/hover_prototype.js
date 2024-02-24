@@ -1,4 +1,4 @@
-import { addOpacityListeners } from "../load_content";
+import { addOpacityListeners } from "../load_content.js";
 addOpacityListeners("marcus")
 addOpacityListeners("robolympiades")
 addOpacityListeners("assistant")
