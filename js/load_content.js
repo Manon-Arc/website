@@ -10,8 +10,8 @@ function selectedCategory(divCliquee, url) {
     divCliquee.classList.add('selected-category');
     loadContent(url)
     console.log(divCliquee)
-        //addOpacityListeners("bluetooth")
-        //addOpacityListeners("moduleESP")
+    addOpacityListeners("bluetooth")
+    addOpacityListeners("moduleESP")
     count++
     }
 
