@@ -41,6 +41,7 @@ function selectedCategory(divCliquee, url) {
                     console.log("Classe non reconnue :", divCliquee.classList[0]);
                     break;
             }
+            console.log(count)
             count++;
         })
         .catch(error => console.error('Error:', error));
