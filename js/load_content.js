@@ -40,8 +40,11 @@ function loadFooter() {
 function addOpacityListeners(target) {
 
     var projectDesc = document.querySelector('.project-desc.' + target);
+    console.log(projectDesc)
     var projectDetail = document.querySelector('.project-detail.' + target);
+    console.log(projectDetail)
     var projectLink = document.querySelector('.link-zone.' + target);
+    console.log(projectLink)
 
 projectDesc.addEventListener('mouseenter', () => {
     projectDesc.style.opacity = '0';
