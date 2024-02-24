@@ -1,5 +1,7 @@
 let count = 0
 
+const 
+
 function selectedCategory(divCliquee, url) {
     var elements = document.getElementsByClassName('txt-category-real');
     for (let j = 0; j < elements.length; j++) {
@@ -10,8 +12,8 @@ function selectedCategory(divCliquee, url) {
     divCliquee.classList.add('selected-category');
     loadContent(url).then(() => {
         console.log("yop")
-        addOpacityListeners("bluetooth")
-        addOpacityListeners("moduleESP")
+        //addOpacityListeners("bluetooth")
+        //addOpacityListeners("moduleESP")
         count++
     })
 }
