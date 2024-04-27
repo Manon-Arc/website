@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <title>Portfolio</title>
     <link rel="shortcut icon" href="../Asset/PortFolio_Icone.png" type="image/x-icon">
-    
 </head>
 <body>
     <header class="header">
@@ -30,14 +29,14 @@
             <a href="../index.html">
                 <p class="txt-category" onclick="selected(this)">Compétences</p>
             </a>
-            <a href="">
-                <p class="txt-category selected" onclick="selected(this)">Réalisations</p>
+            <a href="index_realisation.html">
+                <p class="txt-category" onclick="selected(this)">Réalisations</p>
             </a>
-            <a href="html/index_construction.html">
-				<p class="txt-category" onclick="selected(this)">Experiences</p>
-			</a>
-            <a href="#4">
-                <p class="txt-category" onclick="selected(this)">Contacts</p>
+            <a href="index_construction.html">
+                <p class="txt-category" onclick="selected(this)">Experiences</p>
+            </a>
+            <a href="index_contact.html">
+                <p class="txt-category" onclick="selected(this)">Contact</p>
             </a>
         </div>
     </header>
@@ -59,11 +58,10 @@
                             </div>
                             <input type="email" id="motif" placeholder="Motif" required>
                         </div>
-                        <textarea id="message" placeholder="Votre message" required></textarea>
+                        <textarea type="text" id="message" placeholder="Votre message" required></textarea>
                         <button type="button" onclick="SendEmail()">Envoyer</button>
-                        </form>
+                    </form>
                 </div>
-                
             </div>
         </div>
     </div>
@@ -107,5 +105,5 @@
     <img class="circuit-footer-contact" src="../Asset/circuit.png" alt="">
 </body>
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script src="js/sendMail.js"></script>
+<script src="../js/sendMail.js"></script>
 </html>

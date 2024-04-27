@@ -1,7 +1,6 @@
-const Proto = ["marcus", "robolympiades", "assistant", "mecanum"]
-const ConcElec = ["moduleESP", "bluetooth"]
-const ProjDev = ["danmashi", "weatherapp"]
-const ConcMeca = ["pince", "bb8", "hub", "ventilo"]
+const All = ["IHM", "weatherapp", "danmashi", "appOsyris", "dashboard", "flipper", "escape", "endless", "domolabo", "coffre", "marcus", "robolympiades", "assistant", "mecanum", "bb8", "moduleESP", "bluetooth"]
+const ProjSysEmb = ["domolabo", "coffre", "marcus", "robolympiades", "assistant", "mecanum", "bb8", "moduleESP", "bluetooth"]
+const ProjDev = ["IHM", "weatherapp", "danmashi", "appOsyris", "dashboard", "flipper", "escape", "endless", "domolabo"]
 
 function selectedCategory(divCliquee, url) {
     var elements = document.getElementsByClassName('txt-category-real');
@@ -15,24 +14,20 @@ function selectedCategory(divCliquee, url) {
     loadContent(url)
         .then(() => {
             switch (divCliquee.classList[0]) {
-                case "Proto":
-                    for (let i = 0; i < Proto.length; i++) {
-                        addOpacityListeners(Proto[i]);
+                case "All":
+                    for (let i = 0; i < All.length; i++) {
+                        addOpacityListeners(All[i]);
                     }
                     break;
-                case "ConcElec":
-                    for (let i = 0; i < ConcElec.length; i++) {
-                        addOpacityListeners(ConcElec[i]);
+                case "ProjSysEmb":
+                    for (let i = 0; i < ProjSysEmb.length; i++) {
+                        addOpacityListeners(ProjSysEmb[i]);
                     }
                     break;
                 case "ProjDev":
                     for (let i = 0; i < ProjDev.length; i++) {
+                        console.log(ProjDev[i])
                         addOpacityListeners(ProjDev[i]);
-                    }
-                    break;
-                case "ConcMeca":
-                    for (let i = 0; i < ConcMeca.length; i++) {
-                        addOpacityListeners(ConcMeca[i]);
                     }
                     break;
                 default:
@@ -59,6 +54,10 @@ function addOpacityListeners(target) {
     var projectDesc = document.querySelector('.project-desc.' + target);
     var projectDetail = document.querySelector('.project-detail.' + target);
     var projectLink = document.querySelector('.link-zone.' + target);
+
+    console.log(projectDesc)
+    console.log(projectDetail)
+    console.log(projectLink)
 
 projectDesc.addEventListener('mouseenter', () => {
     projectDesc.style.opacity = '0';

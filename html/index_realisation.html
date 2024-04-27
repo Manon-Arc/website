@@ -12,6 +12,7 @@
     <title>Portfolio</title>
     <link rel="shortcut icon" href="../Asset/PortFolio_Icone.png" type="image/x-icon">
 </head>
+
 <body>
     <header class="header">
         <div class="header-left">
@@ -33,8 +34,8 @@
                 <p class="txt-category selected" onclick="selected(this)">Réalisations</p>
             </a>
             <a href="index_construction.html">
-				<p class="txt-category" onclick="selected(this)">Experiences</p>
-			</a>
+                <p class="txt-category" onclick="selected(this)">Experiences</p>
+            </a>
             <a href="index_contact.html">
                 <p class="txt-category" onclick="selected(this)">Contact</p>
             </a>
@@ -49,32 +50,586 @@
     </div>
     <div class="category-proj">
         <div>
-            <p class="Proto txt-category-real selected-category" onclick="selectedCategory(this, '../html/templates/prototype.html')">
-                Prototype</p>
+            <p class="All txt-category-real selected-category"
+                onclick="selectedCategory(this, '../html/templates/proj_all.html')">
+                Tout</p>
         </div>
         <div class="line-category"></div>
         <div>
-            <p class="ConcElec txt-category-real" onclick="selectedCategory(this, '../html/templates/conception_elec.html')">
-                <span>Conception</span>
-                <span>électronique</span>
-            </p>
-        </div>
-        <div class="line-category"></div>
-        <div>
-            <p class="ProjDev txt-category-real" onclick="selectedCategory(this, '../html/templates/projet_dev.html')">
-                <span>Projet</span>
+            <p class="ProjDev txt-category-real" onclick="selectedCategory(this, '../html/templates/proj_dev.html')">
+                <span>Projets</span>
                 <span>développement</span>
             </p>
         </div>
         <div class="line-category"></div>
         <div>
-            <p class="ConcMeca txt-category-real" onclick="selectedCategory(this, '../html/templates/conception_meca.html')">
-                <span>Conception</span>
-                <span>mécanique</span>
+            <p class="ProjSysEmb txt-category-real"
+                onclick="selectedCategory(this, '../html/templates/proj_sys_emb.html')">
+                <span>Projets</span>
+                <span>systèmes embarqués</span>
             </p>
         </div>
     </div>
     <div class="project-list" id="list">
+        <div class="project-unit G">
+            <div class="pic-project">
+                <a href="../Asset/project/ihm_unity.svg" target="_blank">
+                    <img src="../Asset/project/ihm_unity.svg" alt="">
+                </a>
+            </div>
+            <div class="project-prez">
+                <div class="project-title">
+                    <p class="txt-title project-name">IHM de contrôle GRPC avec simulation</p>
+                    <div class="under-line"></div>
+                </div>
+                <div class="project-desc IHM">
+                    <p class="txt">Ce projet est une interface utilisateur développée en Qt C++ pour contrôler
+                        un objet 3D <br>visualisé par d'Unity.<br><br> L'interface utilisateur Qt permet à l'utilisateur de
+                        manipuler les propriétés<br> de l'objet 3D, telles que sa position, sa rotation
+                        et d'instancier des GameObjects, tandis<br> qu' Unity est utilisé pour visualiser l'objet 3D et
+                        appliquer les modifications en temps réel.<br>
+                    </p>
+                    <div class="btn-more">
+                        <img src="../Asset/plus.png" alt="">
+                    </div>
+                </div>
+                <div class="project-detail IHM">
+                    <div class="first-line">
+                        <div class="language">
+                            <img class="pic-project-prez" src="../Asset/coding_white.png" alt="">
+                            <p class="txt">C++, C#</p>
+                        </div>
+                        <div class="software">
+                            <img class="pic-project-prez" src="../Asset/software.png" alt="">
+                            <p class="txt">Qt, Unity, Figma</p>
+                        </div>
+                    </div>
+                    <div class="features">
+                        <img class="pic-project-prez" src="../Asset/feature.png" alt="">
+                        <p class="txt">
+                            <span>Interface développée en C++ Qt,</span>
+                            <span>Contrôle de la position et création d'objets,</span>
+                            <span>Système de connexion à un compte utilisateur (SQLite),</span>
+                            <span>Visualisation en temps réel sur Unity,</span>
+                            <span>Communication GRPC,</span>
+                            <span>Possibilité d'utiliser deux ordinateurs distincts (même réseau),</span>
+                            <span>Client compatible Linux/Windows, serveur compatible Windows uniquement.</span>
+                        </p>
+                    </div>
+                    <div class="team">
+                        <img class="pic-project-prez" src="../Asset/user.png" alt="">
+                        <p class="txt">Collaboratif</p>
+                    </div>
+                    <div class="link-zone IHM">
+                        <p class="logiciel-link">
+                            <span>lien du projet : </span>
+                            <span>
+                                <a class="link-proj" href="https://github.com/Manon-Arc/projetDev_IHM"
+                                    target="_blank">https://github.com/Manon-Arc/projetDev_IHM</a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="project-unit D">
+            <div class="project-prez">
+                <div class="project-title project-title-D">
+                    <p class="txt-title project-name">WeatherApp</p>
+                    <div class="under-line"></div>
+                </div>
+        
+                <div class="project-desc project-desc-D weatherapp">
+                    <p class="txt">Création d'une application météo.<br><br>
+                    </p>
+                    <div class="btn-more">
+                        <img src="../Asset/plus.png" alt="">
+                    </div>
+                </div>
+                <div class="project-detail project-detail-D weatherapp">
+                    <div class="first-line">
+                        <div class="language">
+                            <img class="pic-project-prez" src="../Asset/coding_white.png" alt="">
+                            <p class="txt">C#, Avalonia</p>
+                        </div>
+                    </div>
+                    <div class="features">
+                        <img class="pic-project-prez" src="../Asset/feature.png" alt="">
+                        <p class="txt">
+                            <span>Utilisation de l'API OpenWeather,</span>
+                            <span>Barre de recherche,</span>
+                            <span>Possibilité d'enregistrer une ville par défaut,</span>
+                            <span>42 langues disponibles.</span>
+                        </p>
+                    </div>
+                    <div class="team">
+                        <img class="pic-project-prez" src="../Asset/user.png" alt="">
+                        <p class="txt">Collaboratif</p>
+                    </div>
+                    <div class="link-zone weatherapp">
+                        <p class="logiciel-link">
+                            <span>lien du projet : </span>
+                            <span>
+                                <a class="link-proj" href="https://github.com/Manon-Arc/WeatherApp"
+                                    target="_blank">https://github.com/Manon-Arc/WeatherApp</a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="pic-project">
+                <a href="../Asset/project/weatherapp_home.png" target="_blank">
+                    <img src="../Asset/project/weatherapp_home.png" alt="">
+                </a>
+            </div>
+        </div>
+        
+        
+        <div class="project-unit G">
+            <div class="pic-project">
+                <a href="../Asset/project/danmashi_start.png" target="_blank">
+                    <img src="../Asset/project/danmashi_start.png" alt="">
+                </a>
+            </div>
+            <div class="project-prez">
+                <div class="project-title">
+                    <p class="txt-title project-name">Danmashi</p>
+                    <div class="under-line"></div>
+                </div>
+                <div class="project-desc danmashi">
+                    <p class="txt">Danmashi est un jeu de combat au tour par tour en ligne de commande.<br><br>
+                        L'utilisateur incarne un joueur appartenant à une classe de son choix<br>
+                        dont le but est de sortir victorieux d'un donjon de 10 étages remplis de
+                        monstres.<br>
+                    </p>
+                    <div class="btn-more">
+                        <img src="../Asset/plus.png" alt="">
+                    </div>
+                </div>
+                <div class="project-detail danmashi">
+                    <div class="first-line">
+                        <div class="language">
+                            <img class="pic-project-prez" src="../Asset/coding_white.png" alt="">
+                            <p class="txt">Python</p>
+                        </div>
+                    </div>
+                    <div class="features">
+                        <img class="pic-project-prez" src="../Asset/feature.png" alt="">
+                        <p class="txt">
+                            <span>Choix du nom du personnage ("player" par défault),</span>
+                            <span>Choix de la classe du personnage parmi : Mage, Assassin et Guerrier,</span>
+                            <span>Musique de fond durant le jeu et ASCII art pour améliorer l'immertion du joueur,</span>
+                            <span>Génération aléatoire des monstres parmi des listes de difficultés différentes,</span>
+                            <span>Choix des actions à l'aide des touches directionnelles,</span>
+                            <span>Possibilité de débloquer de nouvelles compétences et de récupérer des objets.</span>
+                        </p>
+                    </div>
+                    <div class="team">
+                        <img class="pic-project-prez" src="../Asset/user.png" alt="">
+                        <p class="txt">Individuel</p>
+                    </div>
+                    <div class="link-zone danmashi">
+                        <p class="logiciel-link">
+                            <span>lien du projet : </span>
+                            <span>
+                                <a class="link-proj" href="https://github.com/Manon-Arc/Projet_python_Danmashi"
+                                    target="_blank">https://github.com/Manon-Arc/Python_Project_Danmashi.git</a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="project-unit D">
+            <div class="project-prez">
+                <div class="project-title project-title-D">
+                    <p class="txt-title project-name">Application Osyris</p>
+                    <div class="under-line"></div>
+                </div>
+        
+                <div class="project-desc project-desc-D appOsyris">
+                    <p class="txt">Création d'une application de gestion associative.<br><br>
+                    </p>
+                    <div class="btn-more">
+                        <img src="../Asset/plus.png" alt="">
+                    </div>
+                </div>
+                <div class="project-detail project-detail-D appOsyris">
+                    <div class="first-line">
+                        <div class="language">
+                            <img class="pic-project-prez" src="../Asset/coding_white.png" alt="">
+                            <p class="txt">React Native</p>
+                        </div>
+                        <div class="software">
+                            <img class="pic-project-prez" src="../Asset/software.png" alt="">
+                            <p class="txt">Figma</p>
+                        </div>
+                    </div>
+                    <div class="features">
+                        <img class="pic-project-prez" src="../Asset/feature.png" alt="">
+                        <p class="txt">
+                            <span>Système de connexion à un compte utilisateur (Firebase),</span>
+                            <span>Création d'évènements,</span>
+                            <span>Gestion des présence aux évènements,</span>
+                            <span>Liste et contacts des membres;</span>
+                            <span>Possibilité d'un compte admin.</span>
+                        </p>
+                    </div>
+                    <div class="team">
+                        <img class="pic-project-prez" src="../Asset/user.png" alt="">
+                        <p class="txt">Individuel</p>
+                    </div>
+                    <div class="link-zone appOsyris">
+                        <p class="logiciel-link">
+                            <span>lien du projet : </span>
+                            <span>
+                                <a class="link-proj" href=""
+                                    target="_blank">En cours de développement</a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="pic-project">
+                <a href="../Asset/project/osyris_app.png" target="_blank">
+                    <img src="../Asset/project/osyris_app.png" alt="">
+                </a>
+            </div>
+        </div>
+        
+        <div class="project-unit G">
+            <div class="pic-project">
+                <a href="../Asset/project/dashboard.png" target="_blank">
+                    <img src="../Asset/project/dashboard.png" alt="">
+                </a>
+            </div>
+            <div class="project-prez">
+                <div class="project-title">
+                    <p class="txt-title project-name">Dashboard Netflix</p>
+                    <div class="under-line"></div>
+                </div>
+                <div class="project-desc dashboard">
+                    <p class="txt">Ce projet vise à fournir un tableau de bord web intéractif pour afficher
+                        les films et séries<br> TV disponibles sur Netflix ainsi que leurs caractéristiques.<br>
+                    </p>
+                    <div class="btn-more">
+                        <img src="../Asset/plus.png" alt="">
+                    </div>
+                </div>
+                <div class="project-detail dashboard">
+                    <div class="first-line">
+                        <div class="language">
+                            <img class="pic-project-prez" src="../Asset/coding_white.png" alt="">
+                            <p class="txt">Python, Django</p>
+                        </div>
+                    </div>
+                    <div class="features">
+                        <img class="pic-project-prez" src="../Asset/feature.png" alt="">
+                        <p class="txt">
+                            <span>Utilisation du framework Django,</span>
+                            <span>Exploitation de csv,</span>
+                            <span>Filtres caractéristiques,</span>
+                            <span>Diagrammes et graphiques intéractifs.</span>
+                        </p>
+                    </div>
+                    <div class="team">
+                        <img class="pic-project-prez" src="../Asset/user.png" alt="">
+                        <p class="txt">Collectif</p>
+                    </div>
+                    <div class="link-zone dashboard">
+                        <p class="logiciel-link">
+                            <span>lien du projet : </span>
+                            <span>
+                                <a class="link-proj" href="https://github.com/Manon-Arc/Flipper_mobile"
+                                    target="_blank">https://github.com/Manon-Arc/Flipper_mobile</a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="project-unit D">
+            <div class="project-prez">
+                <div class="project-title project-title-D">
+                    <p class="txt-title project-name">Flipper mobile</p>
+                    <div class="under-line"></div>
+                </div>
+        
+                <div class="project-desc project-desc-D flipper">
+                    <p class="txt">Création d'une application de flipper sur mobile.<br><br>
+                    </p>
+                    <div class="btn-more">
+                        <img src="../Asset/plus.png" alt="">
+                    </div>
+                </div>
+                <div class="project-detail project-detail-D flipper">
+                    <div class="first-line">
+                        <div class="language">
+                            <img class="pic-project-prez" src="../Asset/coding_white.png" alt="">
+                            <p class="txt">C#</p>
+                        </div>
+                        <div class="software">
+                            <img class="pic-project-prez" src="../Asset/software.png" alt="">
+                            <p class="txt">Unity</p>
+                        </div>
+                    </div>
+                    <div class="features">
+                        <img class="pic-project-prez" src="../Asset/feature.png" alt="">
+                        <p class="txt">
+                            <span>Trois scènes disponibles,</span>
+                            <span>Obstacles variés (points, physiques, non-physiques),</span>
+                            <span>Affichage du score en temps réel,</span>
+                            <span>Visualisation du nombre de vies restantes,</span>
+                            <span>Effets sonores et musique de fond durant le jeu,</span>
+                            <span>Gestion de l'affichage du bouton de lancement des balles.</span>
+                        </p>
+                    </div>
+                    <div class="team">
+                        <img class="pic-project-prez" src="../Asset/user.png" alt="">
+                        <p class="txt">Collaboratif</p>
+                    </div>
+                    <div class="link-zone flipper">
+                        <p class="logiciel-link">
+                            <span>lien du projet : </span>
+                            <span>
+                                <a class="link-proj" href=""
+                                    target="_blank">En cours de développement</a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="pic-project">
+                <a href="../Asset/project/flipper.png" target="_blank">
+                    <img src="../Asset/project/flipper.png" alt="">
+                </a>
+            </div>
+        </div>
+        
+        <div class="project-unit G">
+            <div class="pic-project">
+                <a href="../Asset/project/escape.png" target="_blank">
+                    <img src="../Asset/project/escape.png" alt="">
+                </a>
+            </div>
+            <div class="project-prez">
+                <div class="project-title">
+                    <p class="txt-title project-name">Escape game en CLI</p>
+                    <div class="under-line"></div>
+                </div>
+                <div class="project-desc escape">
+                    <p class="txt">Escape Game dans le terminal, plusieurs options à dispositions pour intéragir avec<br> les différents éléments de l'environnement, afin de résoudre une intrigue.
+                    </p>
+                    <div class="btn-more">
+                        <img src="../Asset/plus.png" alt="">
+                    </div>
+                </div>
+                <div class="project-detail escape">
+                    <div class="first-line">
+                        <div class="language">
+                            <img class="pic-project-prez" src="../Asset/coding_white.png" alt="">
+                            <p class="txt">Python</p>
+                        </div>
+                    </div>
+                    <div class="features">
+                        <img class="pic-project-prez" src="../Asset/feature.png" alt="">
+                        <p class="txt">
+                            <span>Système de classes (POO),</span>
+                            <span>Intéractif : gestion entrées utilisateur,</span>
+                            <span>Plusieurs fins disponibles.</span>
+                        </p>
+                    </div>
+                    <div class="team">
+                        <img class="pic-project-prez" src="../Asset/user.png" alt="">
+                        <p class="txt">Individuel</p>
+                    </div>
+                    <div class="link-zone escape">
+                        <p class="logiciel-link">
+                            <span>lien du projet : </span>
+                            <span>
+                                <a class="link-proj" href=""
+                                    target="_blank">En cours de développement</a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="project-unit D">
+            <div class="project-prez">
+                <div class="project-title project-title-D">
+                    <p class="txt-title project-name">Endless runner</p>
+                    <div class="under-line"></div>
+                </div>
+        
+                <div class="project-desc project-desc-D endless">
+                    <p class="txt">Création d'un jeu de type "Endless runner"<br><br>
+                    </p>
+                    <div class="btn-more">
+                        <img src="../Asset/plus.png" alt="">
+                    </div>
+                </div>
+                <div class="project-detail project-detail-D endless">
+                    <div class="first-line">
+                        <div class="language">
+                            <img class="pic-project-prez" src="../Asset/coding_white.png" alt="">
+                            <p class="txt">C#</p>
+                        </div>
+                        <div class="software">
+                            <img class="pic-project-prez" src="../Asset/software.png" alt="">
+                            <p class="txt">Unity</p>
+                        </div>
+                    </div>
+                    <div class="features">
+                        <img class="pic-project-prez" src="../Asset/feature.png" alt="">
+                        <p class="txt">
+                            <span>Trois scènes disponibles,</span>
+                            <span>Génération d'obstacles aléatoires,</span>
+                            <span>Possibilités de récupérer des bonus (pièces),</span>
+                            <span>Contrôle via la touche "espace" du clavier,</span>
+                            <span>Musique de fond durant le jeu,</span>
+                            <span>Affichage du score en temps réel.</span>
+                        </p>
+                    </div>
+                    <div class="team">
+                        <img class="pic-project-prez" src="../Asset/user.png" alt="">
+                        <p class="txt">Individuel</p>
+                    </div>
+                    <div class="link-zone endless">
+                        <p class="logiciel-link">
+                            <span>lien du projet : </span>
+                            <span>
+                                <a class="link-proj" href="https://github.com/Manon-Arc/Endless_runner"
+                                    target="_blank">https://github.com/Manon-Arc/Endless_runner</a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="pic-project">
+                <a href="../Asset/project/endless.png" target="_blank">
+                    <img src="../Asset/project/endless.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="project-unit G">
+            <div class="pic-project">
+                <a href="../Asset/project/Domolabo.png" target="_blank">
+                    <img src="../Asset/project/Domolabo.png" alt="">
+                </a>
+            </div>
+            <div class="project-prez">
+                <div class="project-title">
+                    <p class="txt-title project-name">Domolabo</p>
+                    <div class="under-line"></div>
+                </div>
+
+                <div class="project-desc domolabo">
+                    <p class="txt">Création d'un système domotique de l'applications jusqu'aux objets connectés incluant
+                        le hub.</p>
+                    <div class="btn-more">
+                        <img src="../Asset/plus.png" alt="">
+                    </div>
+                </div>
+                <div class="project-detail domolabo">
+                    <div class="first-line">
+                        <div class="language">
+                            <img class="pic-project-prez" src="../Asset/coding_white.png" alt="">
+                            <p class="txt">Python / micropython, C#, Xamarin</p>
+                        </div>
+                        <div class="software">
+                            <img class="pic-project-prez" src="../Asset/software.png" alt="">
+                            <p class="txt">Fusion360 / Kicad / Figma</p>
+                        </div>
+                    </div>
+                    <div class="features">
+                        <img class="pic-project-prez" src="../Asset/feature.png" alt="">
+                        <p class="txt">
+                            <span>Application développé en C# Xamarin permettant l'enregistrement et la gestion des
+                                objets, </span>
+                            <span>Deux objets disponibles : ventilateur et station météo,</span>
+                            <span>Base de donnée SQLite pour stocker les objets enregistrés,</span>
+                            <span>Communication BLE et MQTT.</span>
+                        </p>
+                    </div>
+                    <div class="team">
+                        <img class="pic-project-prez" src="../Asset/user.png" alt="">
+                        <p class="txt">Collaboratif</p>
+                    </div>
+                    <div class="link-zone domolabo">
+                        <p class="logiciel-link">
+                            <span>lien du projet : </span>
+                            <span>
+                                <a class="link-proj" target="_blank">En cours de développement</a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="project-unit D">
+            <div class="project-prez">
+                <div class="project-title project-title-D">
+                    <p class="txt-title project-name">Coffre connecté</p>
+                    <div class="under-line"></div>
+                </div>
+
+                <div class="project-desc project-desc-D coffre">
+                    <p class="txt">Prototype de coffre à authentification multiples.<br><br>
+                    </p>
+                    <div class="btn-more">
+                        <img src="../Asset/plus.png" alt="">
+                    </div>
+                </div>
+                <div class="project-detail project-detail-D coffre">
+                    <div class="first-line">
+                        <div class="language">
+                            <img class="pic-project-prez" src="../Asset/coding_white.png" alt="">
+                            <p class="txt">Python / micropython</p>
+                        </div>
+                        <div class="software">
+                            <img class="pic-project-prez" src="../Asset/software.png" alt="">
+                            <p class="txt">Fusion360 / Kicad</p>
+                        </div>
+                    </div>
+                    <div class="features">
+                        <img class="pic-project-prez" src="../Asset/feature.png" alt="">
+                        <p class="txt">
+                            <span>Authentification via pavé numérique et RFID,</span>
+                            <span>Vérouillage automatiquement du coffre après fermeture,</span>
+                            <span>Indicateurs sonores et visuels.</span>
+                        </p>
+                    </div>
+                    <div class="team">
+                        <img class="pic-project-prez" src="../Asset/user.png" alt="">
+                        <p class="txt">Collaboratif</p>
+                    </div>
+                    <div class="link-zone coffre">
+                        <p class="logiciel-link">
+                            <span>lien du projet : </span>
+                            <span>
+                                <a class="link-proj" href="" target="_blank">En cours de développement</a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="pic-project">
+                <a href="../Asset/project/coffre.png" target="_blank">
+                    <img src="../Asset/project/coffre.png" alt="">
+                </a>
+            </div>
+        </div>
+
+
 
         <div class="project-unit G">
             <div class="pic-project">
@@ -87,7 +642,7 @@
                     <p class="txt-title project-name">Marcus</p>
                     <div class="under-line"></div>
                 </div>
-        
+
                 <div class="project-desc marcus">
                     <p class="txt">Création d'un prototype de robot pompier en 5 jours lors d'un Hackaton.</p>
                     <div class="btn-more">
@@ -131,10 +686,7 @@
                 </div>
             </div>
         </div>
-        
-        
-        
-        
+
         <div class="project-unit D">
             <div class="project-prez">
                 <div class="project-title project-title-D">
@@ -174,10 +726,10 @@
                             <span>Tête qui se lève pour récupérer un cube sur l'avant.</span>
                         </p>
                     </div>
-                        <div class="team">
-                            <img class="pic-project-prez" src="../Asset/user.png" alt="">
-                            <p class="txt">Collaboratif</p>
-                        </div>
+                    <div class="team">
+                        <img class="pic-project-prez" src="../Asset/user.png" alt="">
+                        <p class="txt">Collaboratif</p>
+                    </div>
                     <div class="link-zone robolympiades">
                         <p class="logiciel-link">
                             <span>lien du projet : </span>
@@ -195,9 +747,9 @@
                 </a>
             </div>
         </div>
-        
-        
-        
+
+
+
         <div class="project-unit G">
             <div class="pic-project">
                 <a href="../Asset/project/assistant.png" target="_blank">
@@ -209,9 +761,10 @@
                     <p class="txt-title project-name">Assistant mobile sur rail</p>
                     <div class="under-line"></div>
                 </div>
-        
+
                 <div class="project-desc project-desc-G assistant">
-                    <p class="txt">Prototype de robot assistant mobile sur rail. Ce robot peut être utilisé comme une troisième
+                    <p class="txt">Prototype de robot assistant mobile sur rail. Ce robot peut être utilisé comme une
+                        troisième
                         main, un support d'outils ou un dispositif de rangement.</p>
                     <div class="btn-more">
                         <img src="../Asset/plus.png" alt="">
@@ -233,14 +786,15 @@
                         <p class="txt">
                             <span>Sélection du poste de travail à l'aide d'un bouton,</span>
                             <span>Déplacement automatiquement vers le poste sélectionné,</span>
-                            <span>Capteur de proximité inductif pour identifier l'emplacement du poste de travail.</span>
+                            <span>Capteur de proximité inductif pour identifier l'emplacement du poste de
+                                travail.</span>
                         </p>
                     </div>
                     <div class="team">
                         <img class="pic-project-prez" src="../Asset/user.png" alt="">
                         <p class="txt">Individuel</p>
                     </div>
-        
+
                     <div class="link-zone assistant">
                         <p class="logiciel-link">
                             <span>lien du projet : </span>
@@ -253,8 +807,8 @@
                 </div>
             </div>
         </div>
-        
-        
+
+
         <div class="project-unit D">
             <div class="project-prez">
                 <div class="project-title project-title-D">
@@ -279,7 +833,6 @@
                             <p class="txt">Fusion360 / Kicad</p>
                         </div>
                     </div>
-        
                     <div class="features">
                         <img class="pic-project-prez" src="../Asset/feature.png" alt="">
                         <p class="txt">
@@ -292,7 +845,6 @@
                         <img class="pic-project-prez" src="../Asset/user.png" alt="">
                         <p class="txt">Individuel</p>
                     </div>
-        
                     <div class="link-zone mecanum">
                         <p class="logiciel-link">
                             <span>lien du projet : </span>
@@ -310,7 +862,159 @@
                 </a>
             </div>
         </div>
+
+
+        <div class="project-unit G">
+            <div class="pic-project">
+                <a href="../Asset/project/BB8.png" target="_blank">
+                    <img src="../Asset/project/BB8.png" alt="">
+                </a>
+            </div>
+            <div class="project-prez">
+                <div class="project-title project-title-G">
+                    <p class="txt-title project-name">BB8</p>
+                    <div class="under-line"></div>
+                </div>
+
+                <div class="project-desc project-desc-G bb8">
+                    <p class="txt">Prototype de sphère roulante inspiré de BB8.<br><br>
+                    </p>
+                    <div class="btn-more">
+                        <img src="../Asset/plus.png" alt="">
+                    </div>
+                </div>
+                <div class="project-detail project-detail-G bb8">
+                    <div class="first-line">
+                        <div class="language">
+                            <img class="pic-project-prez" src="../Asset/coding_white.png" alt="">
+                            <p class="txt">Python / micropython</p>
+                        </div>
+                        <div class="software">
+                            <img class="pic-project-prez" src="../Asset/software.png" alt="">
+                            <p class="txt">Fusion360 / Kicad</p>
+                        </div>
+                    </div>
+                    <div class="features">
+                        <img class="pic-project-prez" src="../Asset/feature.png" alt="">
+                        <p class="txt">
+                            <span>Serveur web directement hébergé sur le robot,</span>
+                            <span>Contrôle via une interface web.</span>
+                        </p>
+                    </div>
+                    <div class="team">
+                        <img class="pic-project-prez" src="../Asset/user.png" alt="">
+                        <p class="txt">Collaboratif</p>
+                    </div>
+                    <div class="link-zone bb8">
+                        <p class="logiciel-link">
+                            <span>lien du projet : </span>
+                            <span>
+                                <a class="link-proj" href="https://github.com/Manon-Arc/BB8"
+                                    target="_blank">https://github.com/Manon-Arc/BB8</a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-unit D">
+            <div class="project-prez">
+                <div class="project-title project-title-D">
+                    <p class="txt-title project-name">Module ESP32</p>
+                    <div class="under-line"></div>
+                </div>
+                <div class="project-desc project-desc-D moduleESP">
+                    <p class="txt">Conception sur mesure d'un module ESP32.</p>
+                    <div class="btn-more">
+                        <img src="../Asset/plus.png" alt="">
+                    </div>
+                </div>
+                <div class="project-detail moduleESP project-detail-D">
+                    <div class="first-line">
+                        <div class="software">
+                            <img class="pic-project-prez" src="../Asset/software.png" alt="">
+                            <p class="txt">Circuit Maker / Altium Designer</p>
+                        </div>
+                    </div>
+                    <div class="features">
+                        <img class="pic-project-prez" src="../Asset/feature.png" alt="">
+                        <p class="txt">
+                            <span>Microcontrôleur : ESP32-WROOM-32U,</span>
+                            <span>Puce de mémoire flash NOR : Winbond W25Q128JVSIM,</span>
+                            <span>Interface USB vers UART : FTDI FT232RQ,</span>
+                            <span>Connecteur Micro-USB 2.0 type B : Molex 105017-0001.</span>
+                        </p>
+                    </div>
+                    <div class="team">
+                        <img class="pic-project-prez" src="../Asset/user.png" alt="">
+                        <p class="txt">Individuel</p>
+                    </div>
+                    <div class="link-zone moduleESP">
+                        <p class="logiciel-link">
+                            <span></span>
+                            <span>
+                                <a class="link-proj" href="" target="_blank"></a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="pic-project">
+                <a href="../Asset/project/esp323D.png" target="_blank">
+                    <img src="../Asset/project/esp323D.png" alt="">
+                </a>
+            </div>
+        </div>
+
+
+        <div class="project-unit G">
+            <div class="pic-project">
+                <a href="../Asset/project/bluletooth3D.png" target="_blank">
+                    <img src="../Asset/project/bluletooth3D.png" alt="">
+                </a>
+            </div>
+            <div class="project-prez">
+                <div class="project-title project-title-G">
+                    <p class="txt-title project-name">Module bluetooth</p>
+                    <div class="under-line"></div>
+                </div>
+                <div class="project-desc project-desc-G bluetooth">
+                    <p class="txt">Conception sur mesure d'un module bluetooth.</p>
+                    <div class="btn-more">
+                        <img src="../Asset/plus.png" alt="">
+                    </div>
+                </div>
+                <div class="project-detail bluetooth project-detail-G">
+                    <div class="fisrt-line">
+                        <div class="software">
+                            <img class="pic-project-prez" src="../Asset/software.png" alt="">
+                            <p class="txt">Circuit Maker / Altium Designer</p>
+                        </div>
+                    </div>
+                    <div class="features">
+                        <img class="pic-project-prez" src="../Asset/feature.png" alt="">
+                        <p class="txt">
+                            <span>STMicroelectronics BLUENRG-232.</span>
+                        </p>
+                    </div>
+                    <div class="team">
+                        <img class="pic-project-prez" src="../Asset/user.png" alt="">
+                        <p class="txt">Individuel</p>
+                    </div>
+                    <div class="link-zone bluetooth">
+                        <p class="logiciel-link">
+                            <span></span>
+                            <span>
+                                <a class="link-proj" href="" target="_blank"></a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
     <div class="footer" id="4">
         <div>
             <p class="contacts">Contacts</p>
@@ -351,8 +1055,9 @@
         </div>
     </div>
     <img class="circuit-footer" src="../Asset/circuit.png" alt="">
-<script src="../js/header.js"></script>
-<script src="../js/load_content.js"></script>
-<script type="module" src="../js/js_hover/hover_prototype.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/load_content.js"></script>
+    <script type="module" src="../js/js_hover/hover_all.js"></script>
 </body>
+
 </html>
