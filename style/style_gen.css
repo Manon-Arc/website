@@ -73,6 +73,10 @@ body {
     font-weight: 500;
 }
 
+.soulignement {
+    text-decoration: underline;
+}
+
 .selected {
     color: var(--main-green);
     font-size: 1rem;

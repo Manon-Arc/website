@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+</head>
+<body>
+    <form id="contactForm">
+        <input type="text" id="nom" placeholder="Votre nom" required>
+        <input type="email" id="email" placeholder="Votre e-mail" required>
+        <textarea id="message" placeholder="Votre message" required></textarea>
+        <button type="button" id="envoyerBtn">Envoyer</button>
+      </form>
+      
+</body>
+<script>
+    
+emailjs.init("99umhq8lrWPBSiJLM");
+
+function envoyerEmail() {
+  var nom = document.getElementById('nom').value;
+  var email = document.getElementById('email').value;
+  var message = document.getElementById('message').value;
+
+  if (!validerEmail(email)) {
+    alert('Veuillez saisir une adresse e-mail valide.');
+    return;
+  }
+
+  emailjs.send("service_test", "template_fnf2u67", {
+    nom: nom,
+    email: email,
+    message: message
+  })
+  .then(function(response) {
+    alert('Votre message a été envoyé avec succès !');
+    document.getElementById('contactForm').reset();
+  })
+  .catch(function(error) {
+    alert('Une erreur est survenue. Veuillez réessayer plus tard.');
+  });
+}
+
+document.getElementById('envoyerBtn').addEventListener('click', function() {
+  envoyerEmail();
+});
+
+function validerEmail(email) {
+    var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  }
+</script>
+</html>
