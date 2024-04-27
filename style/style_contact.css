@@ -25,7 +25,7 @@
     width: 100vw;
     height: 90vh;
     margin-top: 8dvh;
-    background-image: url(/Asset/fond.svg);
+    background-image: url(../Asset/fond.svg);
 }
 
 .contact_box {
