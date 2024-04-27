@@ -10,7 +10,7 @@
 .line-banniere{
     width: 100dvw;
     height: 1dvh;
-    background-color: var(--main-blue);
+    background-color: var(--main-green);
 }
 
 .banniere-pic {
@@ -36,7 +36,7 @@
 .line-category {
     height: 5dvh;
     width: 2px;
-    background-color: var(--main-blue);
+    background-color: var(--main-green);
 }
 
 .project-unit {
@@ -132,7 +132,7 @@
 .under-line {
     width: 65%;
     height: 0.5dvh;
-    background-color: var(--main-blue);
+    background-color: var(--main-green);
 }
 
 .language {

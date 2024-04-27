@@ -1,11 +1,11 @@
 :root {
     --title : #F0F0F0;
     --txt : #CECECE;
-    --main-blue : rgb(61, 128, 149);
+    --main-green : #2c5758;
     --desktopComp : #323232;
     --footer : #393939;
     --gradiant-black : linear-gradient(66deg, #1E1E1E 13.45%, #2F2F2F 78.23%);
-    --gradiant-blue : linear-gradient(93deg, #3D8095 0.03%, #3F5E88 100.03%);
+    --gradiant-green : linear-gradient(93deg, #2c5758 0.03%, #3c8e90 100.03%);
 }
 
 *{
@@ -74,7 +74,7 @@ body {
 }
 
 .selected {
-    color: var(--main-blue);
+    color: var(--main-green);
     font-size: 1rem;
     font-weight: bold;
 }
@@ -96,7 +96,7 @@ body {
 
 .txt-Portfolio {
     font-size: 1.3rem;
-    color: var(--main-blue);
+    color: var(--main-green);
     font-family: "Inter", sans-serif;
     font-weight: bold;
 }
@@ -129,7 +129,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    background: var(--gradiant-blue);
+    background: var(--gradiant-green);
 }
 
 .header {
@@ -173,9 +173,9 @@ body {
 }
 
 .line {
-    background-color: var(--main-blue);
+    background-color: var(--main-green);
     width: 2dvw;
-    height: 0.3dvh;
+    height: 0.4dvh;
 }
 
 .title-line {
@@ -206,7 +206,7 @@ body {
 }
 
 .link-proj:hover{
-    color: var(--main-blue);
+    color: var(--main-green);
     text-decoration: underline;
 }
 
@@ -300,7 +300,7 @@ body {
     border-radius: 50px;
     width: 2dvw;
     aspect-ratio: 1/1;
-    background: var(--gradiant-blue);
+    background: var(--gradiant-green);
     margin-top: 2dvh;
 }
 
