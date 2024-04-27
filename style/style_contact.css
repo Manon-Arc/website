@@ -1,0 +1,146 @@
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8dvh;
+    width: 100vw;
+    height: 15dvh;
+    flex-direction: column; 
+}
+
+.title-txt {
+    width: fit-content;
+}
+
+.under-line {
+    width: 65%;
+    height: 0.5vh;
+    background-color: var(--main-green);
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+    margin-top: 8dvh;
+    background-image: url(/Asset/fond.svg);
+}
+
+.contact_box {
+    width: 50%;
+    height: 70%;
+    border: solid;
+    border-width: 0.3em;
+    border-color: var(--main-green);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone {
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.167);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 9%;
+    border-bottom-left-radius: 9%;
+}
+
+.icone img {
+    width: 30%;
+    aspect-ratio: 1/1;
+    opacity: 1;
+}
+
+.send-data {
+    width: 50%;
+    height: 100%;
+    background-color: var(--main-green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 7%;
+    border-bottom-right-radius: 7%;
+}
+
+.title-contact{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-form {
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.contactForm {
+    width: 70%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.sup-part {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+    width: 100%;
+}
+
+#nom,
+#email,
+#motif {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--main-green);
+    border-radius: 5px;
+    opacity: 0.3;
+}
+
+#message {
+    width: 100%;
+    height: 15dvh;
+    padding: 10px;
+    border: 1px solid var(--main-green);
+    border-radius: 5px;
+    opacity: 0.3;
+}
+
+.contactForm button {
+    width: 35%;
+    padding: 10px;
+    margin-top: 3%;
+    border: none;
+    background-color: whi7;
+    color: var(--main-green);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contactForm button:hover {
+   opacity: 0.7;
+}

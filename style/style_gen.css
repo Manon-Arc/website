@@ -105,6 +105,13 @@ body {
     font-weight: bold;
 }
 
+.txt-contact {
+    font-size: 2rem;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+}
+
 .logiciel-link {
     color: var(--txt);
     font-family: "Inter", sans-serif;
@@ -311,4 +318,40 @@ body {
 .btn-more img{
     width: 1dvw;
     aspect-ratio: 1/1;
+}
+
+/* footer contact.html */
+
+.footer-contact {
+    position: relative;
+    width: 100dvw;
+    height: 25dvh;
+    background: var(--footer);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-logo-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 7dvw;
+    margin: 5dvh;
+}
+
+.contact-logo-footer img {
+    width: 1.5dvw;
+    aspect-ratio: 1/1;
+    transition: transform 0.3s ease;
+}
+
+.circuit-footer-contact {
+    position: absolute;
+    width: 17dvw;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
 }
