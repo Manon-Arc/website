@@ -1,6 +1,6 @@
 const logoPython = document.getElementById('python');
 const logoCS = document.getElementById('csharpe');
-const logoArduino = document.getElementById('arduino');
+const logoJS = document.getElementById('js');
 const logoJava = document.getElementById('java');
 const logoCplus = document.getElementById('cplus');
 const logoC = document.getElementById('c');
@@ -13,7 +13,7 @@ let rayonD = 80;
 
 let anglePython = 0;
 let angleCS = 200;
-let angleArduino = 400;
+let angleJS = 400;
 let angleJava = 600;
 let angleCplus = 800;
 let angleC = 1000;
@@ -29,8 +29,8 @@ function animerD() {
     const xCS= containerECenterX + rayonD * Math.cos(angleCS) - logoCS.offsetWidth / 2;
     const yCS= containerECenterY + rayonD * Math.sin(angleCS) - logoCS.offsetHeight / 2;
 
-    const xArduino = containerECenterX + rayonD * Math.cos(angleArduino) - logoArduino.offsetWidth / 2;
-    const yArduino = containerECenterY + rayonD * Math.sin(angleArduino) - logoArduino.offsetHeight / 2;
+    const xJS = containerECenterX + rayonD * Math.cos(angleJS) - logoJS.offsetWidth / 2;
+    const yJS = containerECenterY + rayonD * Math.sin(angleJS) - logoJS.offsetHeight / 2;
 
     const xJava = containerECenterX + rayonD * Math.cos(angleJava) - logoJava.offsetWidth / 2;
     const yJava = containerECenterY + rayonD * Math.sin(angleJava) - logoJava.offsetHeight / 2;
@@ -47,8 +47,8 @@ function animerD() {
     logoCS.style.left = xCS + 'px';
     logoCS.style.top = yCS + 'px';
 
-    logoArduino.style.left = xArduino + 'px';
-    logoArduino.style.top = yArduino + 'px';
+    logoJS.style.left = xJS + 'px';
+    logoJS.style.top = yJS + 'px';
 
     logoJava.style.left = xJava + 'px';
     logoJava.style.top = yJava + 'px';
@@ -61,7 +61,7 @@ function animerD() {
 
     anglePython += vitesseD;
     angleCS += vitesseD;
-    angleArduino += vitesseD;
+    angleJS += vitesseD;
     angleJava += vitesseD;
     angleCplus += vitesseD;
     angleC += vitesseD;
@@ -72,7 +72,7 @@ function animerD() {
 containerD.addEventListener('mouseenter', async function () {
     logoPython.style.opacity = 1
     logoCS.style.opacity = 1
-    logoArduino.style.opacity = 1
+    logoJS.style.opacity = 1
     logoJava.style.opacity = 1
     logoCplus.style.opacity = 1
     logoC.style.opacity = 1
@@ -82,7 +82,7 @@ containerD.addEventListener('mouseenter', async function () {
 
     logoPython.style.zIndex = 3
     logoCS.style.zIndex = 3
-    logoArduino.style.zIndex = 3
+    logoJS.style.zIndex = 3
     logoJava.style.zIndex = 3
     logoCplus.style.zIndex = 3
     logoC.style.zIndex = 3
@@ -92,7 +92,7 @@ containerD.addEventListener('mouseleave', async function () {
     boucleDownD(80);
     logoPython.style.zIndex = 1
     logoCS.style.zIndex = 1
-    logoArduino.style.zIndex = 1
+    logoJS.style.zIndex = 1
     logoJava.style.zIndex = 1
     logoCplus.style.zIndex = 1
     logoC.style.zIndex = 1
@@ -101,7 +101,7 @@ containerD.addEventListener('mouseleave', async function () {
 
     logoPython.style.opacity = 0
     logoCS.style.opacity = 0
-    logoArduino.style.opacity = 0
+    logoJS.style.opacity = 0
     logoJava.style.opacity = 0
     logoCplus.style.opacity = 0
     logoC.style.opacity = 0
