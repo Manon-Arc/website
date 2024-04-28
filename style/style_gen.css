@@ -32,6 +32,7 @@ body {
     color: var(--title);
     font-family: "Inter", sans-serif;
     font-weight: bold;
+    width: fit-content;
 }
 .txt-title {
     font-size: 2rem;

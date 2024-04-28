@@ -18,6 +18,25 @@
     gap: 0.5rem;
 }
 
+#animation_machine {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border-right: 2px solid white;
+    animation: cursor 0.5s infinite alternate;
+}
+
+@keyframes cursor {
+    from {
+      border-color: transparent;
+    }
+    to {
+      border-color: white;
+    }
+  }
+
 .recherche {
     max-width: 30dvw;
 }
